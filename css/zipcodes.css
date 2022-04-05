@@ -1,0 +1,23 @@
+/* Header Typeface */
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,500;0,700;1,700&display=swap');
+
+/* Body Text Typeface */
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,500;0,700;1,700&family=Alegreya:ital,wght@0,400;0,600;1,400;1,600&display=swap');
+
+html {
+  width: 90%;
+  margin: 25px auto 0 auto;
+}
+
+h1 {
+  width: 48%;
+  font-family: 'Alegreya Sans', 'Raleway', sans-serif;
+  font-size: 36px;
+  font-weight: bold;
+  letter-spacing: 0.75px;
+  color: rgb(0, 0, 255);
+  background-color: #c0c0c0;
+  padding: 12px 25px;
+  border-radius: 10px;
+  text-align: center;
+}
