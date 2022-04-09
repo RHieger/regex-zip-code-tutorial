@@ -680,7 +680,7 @@ along with this program.  If not, see<br />&emsp;&emsp;<https://www.gnu.org/lice
 &emsp;&emsp;If the program does terminal interaction, make it output a short
 notice like this when it starts in an interactive mode:<br /><br />
 &emsp;&emsp;<program>  Copyright &copy; \<year\>  \<name of author\> This program comes with
-**ABSOLUTELY NO WARRANTY;**  for details type `show w'. This is free software,`<br />
+**ABSOLUTELY NO WARRANTY;**  for details type `show w`. This is free software,<br />
 &emsp;&emsp; and you are welcome to redistribute it under certain conditions; type `show c`
 for details.<br /><br />
 &emsp;&emsp;The hypothetical commands `show w' and `show c' should show the appropriate
