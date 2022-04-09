@@ -698,4 +698,5 @@ into proprietary programs.  If your program is<br />
 &emsp;&emsp;a subroutine library, you may consider it more useful to permit linking
 proprietary applications with the library.  If this is what<br />
 &emsp;&emsp;you want to do, use the GNU Lesser General Public License instead of this
-License.  But first, please read <https://www.gnu.org/licenses/why-not-lgpl.html>.
+License.  But first, please read<br />
+&emsp;&emsp;<https://www.gnu.org/licenses/why-not-lgpl.html>.
