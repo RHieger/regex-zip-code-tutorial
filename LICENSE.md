@@ -689,9 +689,9 @@ parts of the General Public License.  Of<br />
 &emsp;&emsp;course, your program's commands might be different; for a GUI interface, you
 would use an "about box".<br /><br />
 &emsp;&emsp;You should also get your employer (if you work as a programmer) or school,
-if any, to sign a "copyright disclaimer" for the program, if necessary.
-For more information on this, and how to apply and follow the GNU GPL, see
-<https://www.gnu.org/licenses/>.<br /><br />
+if any, to sign a "copyright disclaimer" for<br />
+&emsp;&emsp;the program, if necessary. For more information on this, and how to apply
+and follow the GNU GPL, see <https://www.gnu.org/licenses/>.<br /><br />
 &emsp;&emsp;The GNU General Public License does not permit incorporating your program
 into proprietary programs.  If your program is a subroutine library, you
 may consider it more useful to permit linking proprietary applications with
