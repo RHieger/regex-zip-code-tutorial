@@ -667,12 +667,12 @@ the "copyright" line and a pointer to where the full notice is found.<br /><br /
 > &emsp;&emsp;<one line to give the program's name and a brief idea of what it does.>
 Copyright &copy; <year>  <name of author><br /><br />
 &emsp;&emsp;This program is free software: you can redistribute it and/or modify
-it under the terms of the GNU General Public License as<br />&emsp;&emsp;published by
+it under the terms of the **GNU General Public License** as<br />&emsp;&emsp;published by
 the Free Software Foundation, either version 3 of the License, or
 (at your option) any later version.<br /><br />
 &emsp;&emsp;This program is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of<br />
-&emsp;&emsp;MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+but **WITHOUT ANY WARRANTY;** without even the implied warranty of<br />
+&emsp;&emsp;**MERCHANTABILITY** or **FITNESS FOR A PARTICULAR PURPOSE.**  See the
 GNU General Public License for more details.<br /><br />
 &emsp;&emsp;You should have received a copy of the GNU General Public License
 along with this program.  If not, see<br />&emsp;&emsp;<https://www.gnu.org/licenses/>.<br /><br />
@@ -680,8 +680,8 @@ along with this program.  If not, see<br />&emsp;&emsp;<https://www.gnu.org/lice
 &emsp;&emsp;If the program does terminal interaction, make it output a short
 notice like this when it starts in an interactive mode:<br /><br />
 &emsp;&emsp;<program>  Copyright &copy; <year>  <name of author>
-This program comes with ABSOLUTELY NO WARRANTY; for details type `show w'.
-This is free software, and you are welcome to redistribute it
+This program comes with **ABSOLUTELY NO WARRANTY;** for details type `show w'.
+This is free software,<br />&emsp;&emsp;and you are welcome to redistribute it
 under certain conditions; type `show c' for details.<br /><br />
 &emsp;&emsp;The hypothetical commands `show w' and `show c' should show the appropriate
 parts of the General Public License.  Of course, your program's commands
