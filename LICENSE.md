@@ -216,9 +216,11 @@ You may convey a work based on the Program, or the modifications to
 produce it from the Program, in the form of source code under the
 terms of section 4, provided that you also meet all of these conditions:
 
-  a. The work must carry prominent notices stating that you modified
+<ol type="a">
+<li>
+The work must carry prominent notices stating that you modified
 it, and giving a relevant date.
-
+</li>
   b. The work must carry prominent notices stating that it is
 released under this License and any conditions added under section
 7.  This requirement modifies the requirement in section 4 to
@@ -236,6 +238,7 @@ invalidate such permission if you have separately received it.
 Appropriate Legal Notices; however, if the Program has interactive
 interfaces that do not display Appropriate Legal Notices, your
 work need not make them do so.
+</ol>
 
 A compilation of a covered work with other separate and independent
 works, which are not by their nature extensions of the covered work,
