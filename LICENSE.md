@@ -61,7 +61,7 @@ products.  If such problems arise substantially in other domains, we
 stand ready to extend this provision to those domains in future versions
 of the GPL, as needed to protect the freedom of users.
 
- Finally, every program is threatened constantly by software patents.
+Finally, every program is threatened constantly by software patents.
 States should not allow patents to restrict development and use of
 software on general-purpose computers, but in those that do, we wish to
 avoid the special danger that patents applied to a free program could
@@ -77,35 +77,35 @@ TERMS AND CONDITIONS
 
 ### 0. Definitions.
 
-"This License" refers to version 3 of the GNU General Public License.
+**"This License"** refers to version 3 of the GNU General Public License.
 
-"Copyright" also means copyright-like laws that apply to other kinds of
+**"Copyright"** also means copyright-like laws that apply to other kinds of
 works, such as semiconductor masks.
 
-"The Program" refers to any copyrightable work licensed under this
-License.  Each licensee is addressed as "you".  "Licensees" and
-"recipients" may be individuals or organizations.
+**"The Program"** refers to any copyrightable work licensed under this
+License.  Each licensee is addressed as **"you".**  **"Licensees"** and
+**"recipients"** may be individuals or organizations.
 
-To "modify" a work means to copy from or adapt all or part of the work
+To **"modify"** a work means to copy from or adapt all or part of the work
 in a fashion requiring copyright permission, other than the making of an
-exact copy.  The resulting work is called a "modified version" of the
-earlier work or a work "based on" the earlier work.
+exact copy.  The resulting work is called a **"modified version"** of the
+earlier work or a work **"based on"** the earlier work.
 
-A "covered work" means either the unmodified Program or a work based
+A **"covered work"** means either the unmodified Program or a work based
 on the Program.
 
-To "propagate" a work means to do anything with it that, without
+To **"propagate"** a work means to do anything with it that, without
 permission, would make you directly or secondarily liable for
 infringement under applicable copyright law, except executing it on a
 computer or modifying a private copy.  Propagation includes copying,
 distribution (with or without modification), making available to the
 public, and in some countries other activities as well.
 
-To "convey" a work means any kind of propagation that enables other
+To **"convey"** a work means any kind of propagation that enables other
 parties to make or receive copies.  Mere interaction with a user through
 a computer network, with no transfer of a copy, is not conveying.
 
-An interactive user interface displays "Appropriate Legal Notices"
+An interactive user interface displays **"Appropriate Legal Notices"**
 to the extent that it includes a convenient and prominently visible
 feature that (1) displays an appropriate copyright notice, and (2)
 tells the user that there is no warranty for the work (except to the
@@ -116,27 +116,27 @@ menu, a prominent item in the list meets this criterion.
 
 ### 1. Source Code.
 
-The "source code" for a work means the preferred form of the work
-for making modifications to it.  "Object code" means any non-source
+The **"source code"** for a work means the preferred form of the work
+for making modifications to it.  **"Object code"** means any non-source
 form of a work.
 
-A "Standard Interface" means an interface that either is an official
+A **"Standard Interface"** means an interface that either is an official
 standard defined by a recognized standards body, or, in the case of
 interfaces specified for a particular programming language, one that
 is widely used among developers working in that language.
 
-The "System Libraries" of an executable work include anything, other
+The **"System Libraries"** of an executable work include anything, other
 than the work as a whole, that (a) is included in the normal form of
 packaging a Major Component, but which is not part of that Major
 Component, and (b) serves only to enable use of the work with that
 Major Component, or to implement a Standard Interface for which an
 implementation is available to the public in source code form.  A
-"Major Component", in this context, means a major essential component
+**"Major Component",** in this context, means a major essential component
 (kernel, window system, and so on) of the specific operating system
 (if any) on which the executable work runs, or a compiler used to
 produce the work, or an object code interpreter used to run it.
 
-The "Corresponding Source" for a work in object code form means all
+The **"Corresponding Source"** for a work in object code form means all
 the source code needed to generate, install, and (for an executable
 work) run the object code and to modify the work, including scripts to
 control those activities.  However, it does not include the work's
@@ -248,7 +248,7 @@ A compilation of a covered work with other separate and independent
 works, which are not by their nature extensions of the covered work,
 and which are not combined with it such as to form a larger program,
 in or on a volume of a storage or distribution medium, is called an
-"aggregate" if the compilation and its resulting copyright are not
+**"aggregate"** if the compilation and its resulting copyright are not
 used to limit the access or legal rights of the compilation's users
 beyond what the individual works permit.  Inclusion of a covered work
 in an aggregate does not cause this License to apply to the other
@@ -310,11 +310,11 @@ charge under subsection 6d.
 </li>
 </ol>
  
-  A separable portion of the object code, whose source code is excluded
+A separable portion of the object code, whose source code is excluded
 from the Corresponding Source as a System Library, need not be
 included in conveying the object code work.
 
-  A "User Product" is either (1) a "consumer product", which means any
+A **"User Product"** is either (1) a "consumer product", which means any
 tangible personal property which is normally used for personal, family,
 or household purposes, or (2) anything designed or sold for incorporation
 into a dwelling.  In determining whether a product is a consumer product,
@@ -327,7 +327,7 @@ is a consumer product regardless of whether the product has substantial
 commercial, industrial or non-consumer uses, unless such uses represent
 the only significant mode of use of the product.
 
-  "Installation Information" for a User Product means any methods,
+**"Installation Information"** for a User Product means any methods,
 procedures, authorization keys, or other information required to install
 and execute modified versions of a covered work in that User Product from
 a modified version of its Corresponding Source.  The information must
@@ -335,7 +335,7 @@ suffice to ensure that the continued functioning of the modified object
 code is in no case prevented or interfered with solely because
 modification has been made.
 
-  If you convey an object code work under this section in, or with, or
+If you convey an object code work under this section in, or with, or
 specifically for use in, a User Product, and the conveying occurs as
 part of a transaction in which the right of possession and use of the
 User Product is transferred to the recipient in perpetuity or for a
@@ -346,7 +346,7 @@ if neither you nor any third party retains the ability to install
 modified object code on the User Product (for example, the work has
 been installed in ROM).
 
-  The requirement to provide Installation Information does not include a
+The requirement to provide Installation Information does not include a
 requirement to continue to provide support service, warranty, or updates
 for a work that has been modified or installed by the recipient, or for
 the User Product in which it has been modified or installed.  Access to a
@@ -354,15 +354,15 @@ network may be denied when the modification itself materially and
 adversely affects the operation of the network or violates the rules and
 protocols for communication across the network.
 
-  Corresponding Source conveyed, and Installation Information provided,
+Corresponding Source conveyed, and Installation Information provided,
 in accord with this section must be in a format that is publicly
 documented (and with an implementation available to the public in
 source code form), and must require no special password or key for
 unpacking, reading or copying.
 
-  7. Additional Terms.
+### 7. Additional Terms.
 
-  "Additional permissions" are terms that supplement the terms of this
+**"Additional permissions"** are terms that supplement the terms of this
 License by making exceptions from one or more of its conditions.
 Additional permissions that are applicable to the entire Program shall
 be treated as though they were included in this License, to the extent
@@ -371,14 +371,14 @@ apply only to part of the Program, that part may be used separately
 under those permissions, but the entire Program remains governed by
 this License without regard to the additional permissions.
 
-  When you convey a copy of a covered work, you may at your option
+When you convey a copy of a covered work, you may at your option
 remove any additional permissions from that copy, or from any part of
 it.  (Additional permissions may be written to require their own
 removal in certain cases when you modify the work.)  You may place
 additional permissions on material, added by you to a covered work,
 for which you have or can give appropriate copyright permission.
 
-  Notwithstanding any other provision of this License, for material you
+Notwithstanding any other provision of this License, for material you
 add to a covered work, you may (if authorized by the copyright holders of
 that material) supplement the terms of this License with terms:
 
