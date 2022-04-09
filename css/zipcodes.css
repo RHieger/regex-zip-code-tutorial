@@ -120,4 +120,5 @@ code {
   background-color: rgba(162, 57, 202, 0.25);
   color: #a239ca;
   font-weight: 900;
+  transition: all 0.5s;
 }
