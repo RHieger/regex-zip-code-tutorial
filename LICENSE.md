@@ -649,7 +649,7 @@ copy of the Program in return for a fee.
 
 <h2 align="center">
 END OF TERMS AND CONDITIONS
-</h2><br /><br />
+</h2><br /><br /><br />
 
 <h1 align="center">
 How to Apply These Terms to Your New Programs
