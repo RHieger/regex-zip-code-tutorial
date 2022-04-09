@@ -16,7 +16,7 @@ software and other kinds of works.
 The licenses for most software and other practical works are designed
 to take away your freedom to share and change the works.  By contrast,
 the GNU General Public License is intended to guarantee your freedom to
-share and change all versions of a program--to make sure it remains free
+share and change all versions of a program&mdash;to make sure it remains free
 software for all its users.  We, the Free Software Foundation, use the
 GNU General Public License for most of our software; it applies also to
 any other work released this way by its authors.  You can apply it to
@@ -680,9 +680,9 @@ along with this program.  If not, see<br />&emsp;&emsp;<https://www.gnu.org/lice
 &emsp;&emsp;If the program does terminal interaction, make it output a short
 notice like this when it starts in an interactive mode:<br /><br />
 &emsp;&emsp;<program>  Copyright &copy; \<year\>  \<name of author\> This program comes with
-**ABSOLUTELY NO WARRANTY;**  for details type `show w`. This is free software,<br />
-&emsp;&emsp;and you are welcome to redistribute it under certain conditions; type `show c`
-for details.<br /><br />
+**ABSOLUTELY NO WARRANTY;**  for details type `show w`.<br />
+&emsp;&emsp;This is free software, and you are welcome to redistribute it under certain
+conditions; type `show c` for details.<br /><br />
 &emsp;&emsp;The hypothetical commands `show w' and `show c' should show the appropriate
 parts of the General Public License.  Of course, your program's commands
 might be different; for a GUI interface, you would use an "about box".<br /><br />
