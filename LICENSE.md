@@ -662,7 +662,7 @@ free software which everyone can redistribute and change under these terms.
 To do so, attach the following notices to the program.  It is safest
 to attach them to the start of each source file to most effectively
 state the exclusion of warranty; and each file should have at least
-the "copyright" line and a pointer to where the full notice is found.
+the "copyright" line and a pointer to where the full notice is found.<br /><br />
 
 > &emsp;&emsp;<one line to give the program's name and a brief idea of what it does.>
 Copyright (C) <year>  <name of author><br /><br />
@@ -671,7 +671,7 @@ it under the terms of the GNU General Public License as<br />&emsp;&emsp;publish
 the Free Software Foundation, either version 3 of the License, or
 (at your option) any later version.<br /><br />
 &emsp;&emsp;This program is distributed in the hope that it will be useful,
-but<br />WITHOUT ANY WARRANTY; without even the implied warranty of
+but WITHOUT ANY WARRANTY; without even the implied warranty of
 MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 GNU General Public License for more details.<br /><br />
 &emsp;&emsp;You should have received a copy of the GNU General Public License
