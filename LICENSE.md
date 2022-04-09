@@ -220,7 +220,7 @@ terms of section 4, provided that you also meet all of these conditions:
 <li>
 The work must carry prominent notices stating that you modified
 it, and giving a relevant date.
-</li>
+</li><br />
 <li>
 The work must carry prominent notices stating that it is
 released under this License and any conditions added under section
@@ -261,12 +261,15 @@ of sections 4 and 5, provided that you also convey the
 machine-readable Corresponding Source under the terms of this License,
 in one of these ways:
 
-a. Convey the object code in, or embodied in, a physical product
+<ol type="a">
+<li>
+Convey the object code in, or embodied in, a physical product
 (including a physical distribution medium), accompanied by the
 Corresponding Source fixed on a durable physical medium
 customarily used for software interchange.
-
-b. Convey the object code in, or embodied in, a physical product
+</li><br />
+<li>
+Convey the object code in, or embodied in, a physical product
 (including a physical distribution medium), accompanied by a
 written offer, valid for at least three years and valid for as
 long as you offer spare parts or customer support for that product
@@ -277,14 +280,16 @@ medium customarily used for software interchange, for a price no
 more than your reasonable cost of physically performing this
 conveying of source, or (2) access to copy the
 Corresponding Source from a network server at no charge.
-
-c. Convey individual copies of the object code with a copy of the
+</li><br />
+<li>
+Convey individual copies of the object code with a copy of the
 written offer to provide the Corresponding Source.  This
 alternative is allowed only occasionally and noncommercially, and
 only if you received the object code with such an offer, in accord
 with subsection 6b.
-
-d. Convey the object code by offering access from a designated
+</li><br />
+<li>
+Convey the object code by offering access from a designated
 place (gratis or for a charge), and offer equivalent access to the
 Corresponding Source in the same way through the same place at no
 further charge.  You need not require recipients to copy the
@@ -296,12 +301,15 @@ clear directions next to the object code saying where to find the
 Corresponding Source.  Regardless of what server hosts the
 Corresponding Source, you remain obligated to ensure that it is
 available for as long as needed to satisfy these requirements.
-
-e. Convey the object code using peer-to-peer transmission, provided
+</li><br />
+<li>
+Convey the object code using peer-to-peer transmission, provided
 you inform other peers where the object code and Corresponding
 Source of the work are being offered to the general public at no
 charge under subsection 6d.
-
+</li>
+</ol>
+ 
   A separable portion of the object code, whose source code is excluded
 from the Corresponding Source as a System Library, need not be
 included in conveying the object code work.
