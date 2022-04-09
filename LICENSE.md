@@ -677,7 +677,7 @@ GNU General Public License for more details.<br /><br />
 &emsp;&emsp;You should have received a copy of the GNU General Public License
 along with this program.  If not, see<br />&emsp;&emsp;<https://www.gnu.org/licenses/>.<br /><br />
 &emsp;&emsp;Also add information on how to contact you by electronic and paper mail.<br /><br />
-If the program does terminal interaction, make it output a short
+&emsp;&emsp;If the program does terminal interaction, make it output a short
 notice like this when it starts in an interactive mode:<br /><br />
 &emsp;&emsp;<program>  Copyright (C) <year>  <name of author>
 This program comes with ABSOLUTELY NO WARRANTY; for details type `show w'.
