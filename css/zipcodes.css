@@ -1,23 +1,123 @@
 /* Header Typeface */
-@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,500;0,700;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,500;0,600;0,700;1,500;1,600;1,700,0,900&display=swap');
 
 /* Body Text Typeface */
-@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,500;0,700;1,700&family=Alegreya:ital,wght@0,400;0,600;1,400;1,600&display=swap');
+@import url('https://fonts.googleaps.com/css?family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
 
-html {
-  width: 90%;
-  margin: 25px auto 0 auto;
+/* Code Typeface */
+@import url('https://fonts.googleaps.com/css?amily=Roboto+Mono:wght@400;500');
+
+body {
+  margin-top: -20px;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 0;
 }
 
-h1 {
-  width: 48%;
-  font-family: 'Alegreya Sans', 'Raleway', sans-serif;
+#intro {
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+
+header {
+  background-color: #a239ca; /* Fuschia */
+  height: auto;
+  padding: 12px 0 6px 0;
+}
+
+header h1 {
+  font-family: 'Raleway', 'Helvetica', sans-serif;
   font-size: 36px;
-  font-weight: bold;
+  font-weight: 700;
   letter-spacing: 0.75px;
-  color: rgb(0, 0, 255);
-  background-color: #c0c0c0;
-  padding: 12px 25px;
-  border-radius: 10px;
+  color: #d9d9d9; /* Aluminum */
   text-align: center;
+  vertical-align: middle;
+  text-shadow: 2px 2px 3px #ff0000;
+}
+
+h2 {
+  font-family: 'Raleway', 'Helvetica', sans-serif;
+  font-size: 32;
+  letter-spacing: 0.75px;
+  color: #a239ca;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+p {
+  font-family: 'Roboto', 'Tahoma', sans-serif;
+  font-size: 18.5px;
+  line-height: 26px;
+  letter-spacing: 0.55px;
+}
+
+code {
+  display: block;
+  width: 50%;
+  margin: 0 auto;
+  font-family: 'Roboto Mono', 'Courier New', monospace;
+  font-size: 23px;
+  letter-spacing: 0.55px;
+}
+
+.callOutBox {
+  width: 50%;
+  margin: 35px auto 15px auto;
+  border-top: 4.5px solid #a239ca;
+  border-bottom: 4.5px solid #a239ca;
+  border-radius: 12px;
+  padding: 15px 35px;
+}
+
+.divider {
+  width: 50%;
+  margin: 35px auto;
+  border-top: 5px dotted #a239ca;
+}
+
+.callOutBox p {
+  font-weight: 500;
+  letter-spacing: 0.65px;
+  line-height: 32px;
+  width: 95%;
+  margin: 0 auto;
+}
+
+#dataSet {
+  width: 50%;
+  padding: 0 35px;
+  margin: 12px auto 25px auto;
+  border-left: 2.5px solid #a239ca;
+  border-right: 2.5px solid #a239ca;
+  background-color: rgba(128, 128, 128, 0.15);
+  padding: 15px 0;
+}
+
+#dataSet p {
+  font-weight: 500;
+  margin-left: 35px;
+  font-size: 19px;
+}
+
+#validateZip {
+  margin-left: 415px;
+  height: 40px;
+  width: 200px;
+  border: 3px outset #d9d9d9;
+  border-radius: 12px;
+  background-color: #a239ca;
+  font-family: 'Raleway', 'Helvetica', sans-serif;
+  font-size: 17.5px;
+  font-weight: 600;
+  color: #ffffff;
+  padding: 9px 4.5px 12px 4.5px;
+  cursor: pointer;
+}
+
+#validateZip:hover {
+  border: 3px inset #a239ca;
+  background-color: rgba(162, 57, 202, 0.25);
+  color: #a239ca;
+  font-weight: 900;
 }
