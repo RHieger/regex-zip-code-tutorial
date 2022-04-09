@@ -1,4 +1,4 @@
-<p align = "center>
+<p align="center">
 GNU GENERAL PUBLIC LICENSE<br />
 Version 3, 29 June 2007
 </p>
