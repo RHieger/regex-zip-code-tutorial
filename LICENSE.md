@@ -71,9 +71,11 @@ patents cannot be used to render the program non-free.
   The precise terms and conditions for copying, distribution and
 modification follow.
 
-                       TERMS AND CONDITIONS
+<h2 align="center">
+TERMS AND CONDITIONS
+</h2>
 
-  0. Definitions.
+ ### 0. Definitions.
 
   "This License" refers to version 3 of the GNU General Public License.
 
