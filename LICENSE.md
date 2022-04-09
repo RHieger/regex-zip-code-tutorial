@@ -671,8 +671,8 @@ it under the terms of the GNU General Public License as<br />&emsp;&emsp;publish
 the Free Software Foundation, either version 3 of the License, or
 (at your option) any later version.<br /><br />
 &emsp;&emsp;This program is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+but WITHOUT ANY WARRANTY; without even the implied warranty of<br />
+&emsp;&emsp;MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 GNU General Public License for more details.<br /><br />
 &emsp;&emsp;You should have received a copy of the GNU General Public License
 along with this program.  If not, see <https://www.gnu.org/licenses/>.<br /><br />
