@@ -226,7 +226,7 @@ The work must carry prominent notices stating that it is
 released under this License and any conditions added under section
 7.  This requirement modifies the requirement in section 4 to
 "keep intact all notices".
-</li>
+</li><br />
 <li>
 You must license the entire work, as a whole, under this
 License to anyone who comes into possession of a copy.  This
@@ -235,7 +235,7 @@ additional terms, to the whole of the work, and all its parts,
 regardless of how they are packaged.  This License gives no
 permission to license the work in any other way, but it does not
 invalidate such permission if you have separately received it.
-</li>
+</li><br />
 <li>
 If the work has interactive user interfaces, each must display
 Appropriate Legal Notices; however, if the Program has interactive
