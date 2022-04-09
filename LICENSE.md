@@ -679,7 +679,7 @@ along with this program.  If not, see<br />&emsp;&emsp;<https://www.gnu.org/lice
 &emsp;&emsp;Also add information on how to contact you by electronic and paper mail.<br /><br />
 &emsp;&emsp;If the program does terminal interaction, make it output a short
 notice like this when it starts in an interactive mode:<br /><br />
-&emsp;&emsp;<program>  Copyright &copy; <year>  <name of author><br />
+&emsp;&emsp;<program>  Copyright &copy; \<year\>  \<name of author\><br />
 &emsp;&emsp;This program comes with **ABSOLUTELY NO WARRANTY;** for details type `show w'.
 This is free software,<br />
 &emsp;&emsp;and you are welcome to redistribute it
