@@ -679,13 +679,14 @@ along with this program.  If not, see<br />&emsp;&emsp;<https://www.gnu.org/lice
 &emsp;&emsp;Also add information on how to contact you by electronic and paper mail.<br /><br />
 &emsp;&emsp;If the program does terminal interaction, make it output a short
 notice like this when it starts in an interactive mode:<br /><br />
-&emsp;&emsp;<program> Copyright &copy; \<year\>  \<name of author\> This program comes with
+&emsp;&emsp;<program>Copyright &copy; \<year\>  \<name of author\> This program comes with
 **ABSOLUTELY NO WARRANTY;**  for details type `show w`.<br />
 &emsp;&emsp;This is free software, and you are welcome to redistribute it under certain
 conditions; type `show c` for details.<br /><br />
 &emsp;&emsp;The hypothetical commands `show w' and `show c' should show the appropriate
-parts of the General Public License.  Of course, your program's commands
-might be different; for a GUI interface, you would use an "about box".<br /><br />
+parts of the General Public License.  Of<br />
+&emsp;&emsp;course, your program's commands might be different; for a GUI interface, you
+would use an "about box".<br /><br />
 &emsp;&emsp;You should also get your employer (if you work as a programmer) or school,
 if any, to sign a "copyright disclaimer" for the program, if necessary.
 For more information on this, and how to apply and follow the GNU GPL, see
