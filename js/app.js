@@ -14,4 +14,21 @@ const regex = /^[0-9]{5}(-[0-9]{4})?/;
 
 // CAPTURE DOM NODES
 
-const testData = document.getElementById('dataSet');
+const getResults = document.getElementById('validateZip');
+const matches = document.getElementById('results');
+
+/*
+const characterRange = document.createRange();
+
+/*
+const dataLine1 = document.getElementById('line1');
+const dataLine2 = document.getElementById('line2');
+const dataLine3 = document.getElementById('line3');
+*/
+
+/*
+testData.addEventListener('click', () => {
+  let matchedNode = document.getElementsByTagName('p').item(1);
+  matchedNode.innerHTML.textContent.substring(0, 4).style.backgroundColor = 'Yellow';
+});
+*/
