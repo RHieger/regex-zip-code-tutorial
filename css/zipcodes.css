@@ -91,6 +91,13 @@ code {
   font-size: 19px;
 }
 
+#submitResults {
+  display: flex;
+  width: 75%;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
 #validateZip {
   margin-left: 415px;
   height: 40px;
@@ -112,4 +119,28 @@ code {
   color: #a239ca;
   font-weight: 900;
   transition: all 0.5s;
+}
+
+/* Note that active styling below will also be styles
+   set programatically after button is clicked.
+*/
+
+#validateZip:active {
+  border: 3px inset #ff0000;
+  background-color: #d9d9d9;
+  color: #ff0000;
+  transition: all ease-in-out 1s;
+}
+
+#results {
+  height: 100px;
+  width: 250px;
+  border-top: 3px inset #d9d9d9;
+  border-right: 3px outset #a239ca;
+  border-bottom: 3px inset #a239ca;
+  border-left: 3px inset #d9d9d9;
+  border-radius: 10px;
+  padding: 3px 15px;
+  background-color: rgba(128, 128, 128, 0.15);
+  text-overflow: scroll;
 }
