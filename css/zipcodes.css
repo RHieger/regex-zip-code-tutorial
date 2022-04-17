@@ -91,7 +91,7 @@ code {
   font-size: 19px;
 }
 
-#submitResults {
+#getResults {
   display: flex;
   width: 75%;
   align-items: flex-start;
