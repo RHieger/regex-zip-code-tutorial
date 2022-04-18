@@ -6,6 +6,7 @@
  * matches of valid zip codes from test string.
  */
 
+// Capture necessary DOM nodes.
  const resultButton = document.getElementById("validateZip");
  const resultBox = document.getElementById('results');
 
@@ -54,4 +55,20 @@ matches.forEach((match, count) => {
   }
 });
 
-/* CAPTURE REQUIRED DOM NODES */
+/* END DEBUGGING CODE */
+
+const paraCount = matches.length; // Number of paragraphs needed for matches
+
+console.log(`Number of Match paragraphs: ${paraCount}`);  // DEBUG PURPOSES ONLY
+
+// Build DOM nodes to list Regex Matches
+
+const newPara = document.createElement('p');
+
+const domNodes = [];
+
+for (count = 0; count < matches.length; count++) {
+  domNodes.push(newPara);
+}
+
+console.log(domNodes);  // DEBUG ONLY
