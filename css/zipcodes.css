@@ -133,14 +133,37 @@ code {
 }
 
 #results {
-  height: 100px;
-  width: 250px;
-  border-top: 3px inset #d9d9d9;
-  border-right: 3px outset #a239ca;
-  border-bottom: 3px inset #a239ca;
-  border-left: 3px inset #d9d9d9;
-  border-radius: 10px;
-  padding: 3px 15px;
+  overflow: auto;
+  --scrollbar-foreground: #a239ca;
+  --scrollbar-background: rgba(162, 57, 202, 0.25);
+  scrollbar-color: var(--scrollbar-foreground) var(scrollbar-background);
+  height: 85px;
+  width: 300px;
+  border-top: 3px inset #000000;
+  border-right: 3px inset #000000;
+  border-bottom: 3px inset #000000;
+  border-left: 3px inset #000000;
+  padding: 6px 15px 3px 15px;
   background-color: rgba(128, 128, 128, 0.15);
-  text-overflow: scroll;
+  background-color: transparent;
+}
+
+#results::-webkit-scrollbar {
+  width: 18px;
+  height: 18px;
+  border: 2px solid #000000;
+}
+
+#results::-webkit-scrollbar-thumb {
+  background: var(--scrollbar-foreground);
+}
+
+#resuls::-webkit-scrollbar-track {
+  background: var(--scrollbar-background);
+}
+
+#results p {
+  font-family: 'Roboto Mono', 'Courier New', monospace;
+  font-size: 17.5px;
+  margin: 0 0 3px 0;
 }
