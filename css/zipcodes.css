@@ -132,6 +132,14 @@ code {
   transition: all ease-in-out 1s;
 }
 
+/**
+ * CSS Code from this point forward is informed by
+ * the following article:
+ * 
+ * https://css-tricks.com/the-current-state-of-styling-scrollbars-in-css/
+ *
+*/
+
 #results {
   overflow: auto;
   --scrollbar-foreground: #a239ca;
@@ -139,12 +147,9 @@ code {
   scrollbar-color: var(--scrollbar-foreground) var(scrollbar-background);
   height: 85px;
   width: 300px;
-  border-top: 3px inset #000000;
-  border-right: 3px inset #000000;
-  border-bottom: 3px inset #000000;
-  border-left: 3px inset #000000;
+  border: 3px inset #808080;
   padding: 6px 15px 3px 15px;
-  background-color: rgba(128, 128, 128, 0.15);
+  background-color: rgba(128, 128, 128, 0.25);
   background-color: transparent;
 }
 
