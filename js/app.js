@@ -59,21 +59,37 @@ const paraCount = matches.length; // Number of paragraphs needed for matches
 
 console.log(`Number of Match paragraphs: ${paraCount}`);  // DEBUG PURPOSES ONLY
 
-// Append domNodes to resultBox.
+// const addParagraphs = () => {
+//   resultBox.appendChild(domNode1);
+//   resultBox.appendChild(domNode2);
+//   resultBox.appendChild(domNode3);
+//   resultBox.appendChild(domNode4);
+//   resultBox.appendChild(domNode5);
+//   resultBox.appendChild(domNode6);
+//   resultBox.appendChild(domNode7);
+//   resultBox.appendChild(domNode8);
+//   resultBox.appendChild(domNode9);
+//   resultBox.appendChild(domNode10);
+//   resultBox.appendChild(domNode11);
+// };
 
-const domNode1 = document.createElement('p');
-const domNode2 = document.createElement('p');
-const domNode3 = document.createElement('p');
-const domNode4 = document.createElement('p');
-const domNode5 = document.createElement('p');
-const domNode6 = document.createElement('p');
-const domNode7 = document.createElement('p');
-const domNode8 = document.createElement('p');
-const domNode9 = document.createElement('p');
-const domNode10 = document.createElement('p');
-const domNode11 = document.createElement('p');
+const populateResultBox = () => {
+  
+  // Append domNodes to resultBox.
 
-const addParagraphs = () => {
+  const domNode1 = document.createElement('p');
+  const domNode2 = document.createElement('p');
+  const domNode3 = document.createElement('p');
+  const domNode4 = document.createElement('p');
+  const domNode5 = document.createElement('p');
+  const domNode6 = document.createElement('p');
+  const domNode7 = document.createElement('p');
+  const domNode8 = document.createElement('p');
+  const domNode9 = document.createElement('p');
+  const domNode10 = document.createElement('p');
+  const domNode11 = document.createElement('p');
+
+  // Add paragraphs to #results.
   resultBox.appendChild(domNode1);
   resultBox.appendChild(domNode2);
   resultBox.appendChild(domNode3);
@@ -85,9 +101,7 @@ const addParagraphs = () => {
   resultBox.appendChild(domNode9);
   resultBox.appendChild(domNode10);
   resultBox.appendChild(domNode11);
-};
 
-const populateResultBox = () => {
   domNode1.textContent = ' Match #1: ' + matches[0];
   domNode2.textContent = ' Match #2: ' + matches[1];
   domNode3.textContent = ' Match #3: ' + matches[2];
@@ -99,10 +113,13 @@ const populateResultBox = () => {
   domNode9.textContent = ' Match #9: ' + matches[8];
   domNode10.textContent = 'Match #10: ' + matches[9];
   domNode11.textContent = 'Match #11: ' + matches[10];
+
 };
 
-addParagraphs();
+// addParagraphs();
 
-populateResultBox();
+// populateResultBox();
 
 console.log(resultBox); // DEBUG ONLY
+
+resultButton.addEventListener('click', populateResultBox);
