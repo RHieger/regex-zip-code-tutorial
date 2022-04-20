@@ -14,8 +14,8 @@ Photo by ThisIsEngineering (pexels.com)
 The entire software engineering profession, regardless of discipline, eventually
 faces a challenge along the learning pathway. When a budding or even an experienced
 developer encounters this challenge, it presents as somewhat of a monolithic barrier.
-
-It is almost as if that moment is the discovery of a new and threatening four letter word&mdash;**regex.** This despite the fact that the word is five letters.
+It is almost as if that moment is the discovery of a new and threatening four letter word
+(though it's really five letters)&mdash;**regex.**
 
 Speaking for myself, when I first encountered **regex,** or **regular expressions**
 as they are also known, my experience was a disheartening struggle to learn what
