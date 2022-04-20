@@ -37,6 +37,13 @@ it is, and even more importantly, what it is capable of doing.
 
 #### The Origin of Regular Expressions
 
-Regular expressions had their start in theories put forth in 1951 by mathematician
-Stephen Cole Kleene. He defined what he called a regular language described using
-a mathematical notation he called **regular events.**
+Regular expressions have their roots in a 1951 paper by mathemtician Stephen Cole Kleene
+entitled **_Representation of Events in Nerve Nets and Finite Automata._** The ideas
+explored in this paper led to exploration of means to match patterns of characters 
+
+The theories defined in this paper are far beyond the scope of this tutorial, but should
+you be interested in exploring this theory, you can download the paper
+[here](https://www.rand.org/content/dam/rand/pubs/research_memoranda/2008/RM704.pdf).
+
+
+Practical application of Kleene's theories came into their own around 1968
