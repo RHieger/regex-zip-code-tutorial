@@ -36,6 +36,18 @@ h2 {
   text-align: center;
 }
 
+h3 {
+  font-family: 'Raleway', 'Helvetica', sans-serif;
+  font-size: 28px;
+  letter-spacing: 2.5px;
+  font-weight: 600;
+  color: #ffffff;
+  text-shadow: 2px 2px 3px #ff0000;
+  margin-top: 0;
+  margin-bottom: 3px;
+  text-align: center;
+}
+
 p {
   font-family: 'Roboto', 'Tahoma', sans-serif;
   font-size: 18.5px;
@@ -89,6 +101,53 @@ code {
   font-weight: 500;
   margin-left: 35px;
   font-size: 19px;
+}
+
+.expandedView {
+  position: absolute;
+  z-index: 99;
+  top: 115px;
+  left: 425px;
+  width: 45%;
+  border: 6px outset #a239ca;
+  border-radius: 12px;
+  background-color: #d9d9d9;
+  padding: 6px 35px 3px 35px;
+}
+
+.expandedView p {
+  font-family: 'Roboto Mono', 'Courier New', monospace;
+  font-size: 21px;
+  font-weight: 500
+}
+
+.expandedView h3 {
+  margin-top: -12px;
+}
+
+.xBoxExit {
+  position: relative;
+  width: 23px;
+  height: 23px;
+  background-color: #ff0000;
+  color: #ffffff;
+  border: 5px outset #9d9d9d;
+  margin-top: -6px;
+  margin-left: 758px;
+  cursor: pointer;
+}
+
+.xBoxExit p {
+  font-family: 'Roboto Mono', 'Courier New', monospace;
+  font-size: 22px;
+  font-weight: 500;
+  text-align: center;
+  margin-top: -2px;
+  margin-bottom: 0;
+}
+
+.hidden {
+  display: none;
 }
 
 #getResults {
