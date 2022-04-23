@@ -63,6 +63,12 @@ const appendParagraphs = (parent, children) => {
   }
 )};
 
+// Modal Callback Functions
+
+const toggleWindow = (node) => {
+  node.classList.toggle('hidden');
+};
+
 const paragraphText = [
   createParagraph(` Match #1: ${matches[0]}`),
   createParagraph(` Match #2: ${matches[1]}`),
