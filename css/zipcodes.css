@@ -30,8 +30,10 @@ header h1 {
 h2 {
   font-family: 'Raleway', 'Helvetica', sans-serif;
   font-size: 32;
+  font-weight: 700;
   letter-spacing: 0.75px;
   color: #a239ca;
+  margin-top: 0;
   margin-bottom: 12px;
   text-align: center;
 }
@@ -55,18 +57,24 @@ p {
   letter-spacing: 0.55px;
 }
 
+.testString {
+  font-family: 'Roboto', sans-serif;
+  font-size: 17px;
+}
+
 code {
   display: block;
   width: 50%;
   margin: 0 auto;
   font-family: 'Roboto Mono', 'Courier New', monospace;
-  font-size: 23px;
+  font-size: 21px;
   letter-spacing: 0.55px;
+  text-align: center;
 }
 
 .callOutBox {
   width: 50%;
-  margin: 35px auto 15px auto;
+  margin: 12px auto 0 auto;
   border-top: 4.5px solid #a239ca;
   border-bottom: 4.5px solid #a239ca;
   border-radius: 12px;
@@ -74,8 +82,8 @@ code {
 }
 
 .divider {
-  width: 50%;
-  margin: 35px auto;
+  width: 65%;
+  margin: 15px auto;
   border-top: 5px dotted #a239ca;
 }
 
@@ -90,9 +98,9 @@ code {
 #dataSet {
   width: 50%;
   padding: 0 35px;
-  margin: 12px auto 25px auto;
-  border-left: 2.5px solid #a239ca;
-  border-right: 2.5px solid #a239ca;
+  margin: -35px auto 25px auto;
+  border: 3px outset #a239ca;
+  border-radius: 6px;
   background-color: rgba(128, 128, 128, 0.15);
   padding: 15px 0;
 }
@@ -101,6 +109,26 @@ code {
   font-weight: 500;
   margin-left: 35px;
   font-size: 19px;
+}
+
+#dataSet h3 {
+  text-shadow: none;
+  color: #a239ca;
+  font-weight: 700;
+  font-variant: small-caps;
+  letter-spacing: 2.5px;
+}
+
+.maximize {
+  position: relative;
+  margin-top: -13px;
+  margin-left: 798px;
+  width: 30px;
+  height: 20px;
+  background-color: rgba(192, 192, 192, 0.25); /* Silver #c0c0c0 */
+  border: 5px outset #b2beb5; /* Ash Gray */
+  box-shadow: 2px -3px 0 #000000;
+  cursor: pointer;
 }
 
 .expandedView {
