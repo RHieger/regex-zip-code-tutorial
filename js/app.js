@@ -10,6 +10,9 @@
 
  const resultButton = document.getElementById("validateZip");
  const resultBox = document.getElementById('results');
+ const fullView = document.getElementById('expandedView');
+ const exit = document.getElementById('exit');
+ const xMark = document.getElementById('x');
 
  const testString =
  `10003 
