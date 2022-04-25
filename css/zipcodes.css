@@ -119,18 +119,6 @@ code {
   letter-spacing: 2.5px;
 }
 
-.maximize {
-  position: relative;
-  margin-top: -13px;
-  margin-left: 798px;
-  width: 30px;
-  height: 20px;
-  background-color: rgba(192, 192, 192, 0.25); /* Silver #c0c0c0 */
-  border: 5px outset #b2beb5; /* Ash Gray */
-  box-shadow: 2px -3px 0 #000000;
-  cursor: pointer;
-}
-
 .hidden {
   display: none;
 }
