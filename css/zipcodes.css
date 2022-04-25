@@ -131,58 +131,6 @@ code {
   cursor: pointer;
 }
 
-.expandedView {
-  position: absolute;
-  z-index: 99;
-  top: 115px;
-  left: 425px;
-  width: 45%;
-  border: 6px outset #a239ca;
-  border-radius: 12px;
-  background-color: #d9d9d9;
-  padding: 6px 35px 3px 35px;
-}
-
-.expandedView p {
-  font-family: 'Roboto Mono', 'Courier New', monospace;
-  font-size: 21px;
-  font-weight: 500
-}
-
-.expandedView h3 {
-  margin-top: -12px;
-}
-
-.scrim {
-  position: fixed;
-  top: 0;
-  height: 100vh;
-  width: 100vw;
-  background-color: rgba(0, 0, 0, 0.45);
-  z-index: 2;
-}
-
-.xBoxExit {
-  position: relative;
-  width: 23px;
-  height: 23px;
-  background-color: #ff0000;
-  color: #ffffff;
-  border: 5px outset #9d9d9d;
-  margin-top: -6px;
-  margin-left: 758px;
-  cursor: pointer;
-}
-
-.xBoxExit p {
-  font-family: 'Roboto Mono', 'Courier New', monospace;
-  font-size: 22px;
-  font-weight: 500;
-  text-align: center;
-  margin-top: -2px;
-  margin-bottom: 0;
-}
-
 .hidden {
   display: none;
 }
