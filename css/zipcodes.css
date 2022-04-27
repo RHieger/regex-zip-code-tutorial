@@ -57,12 +57,7 @@ p {
   letter-spacing: 0.55px;
 }
 
-.testString {
-  font-family: 'Roboto', sans-serif;
-  font-size: 17px;
-}
-
-code {
+.testString, code {
   display: block;
   width: 50%;
   margin: 0 auto;
@@ -70,6 +65,11 @@ code {
   font-size: 21px;
   letter-spacing: 0.55px;
   text-align: center;
+}
+
+.testString {
+  text-align: left;
+  font-size: 23px;
 }
 
 .callOutBox {
@@ -83,7 +83,7 @@ code {
 
 .divider {
   width: 65%;
-  margin: 15px auto;
+  margin: 25px auto 15px auto;
   border-top: 5px dotted #a239ca;
 }
 
@@ -130,7 +130,14 @@ code {
   justify-content: space-between;
 }
 
-#validateZip {
+.verticalButtonGroup {
+  display: flex;
+  flex-direction: column;
+  height: 85px;
+  justify-items: center;
+}
+
+.controlButton {
   margin-left: 415px;
   height: 40px;
   width: 200px;
@@ -145,7 +152,7 @@ code {
   cursor: pointer;
 }
 
-#validateZip:hover {
+.controlButton:hover {
   border: 3px inset #a239ca;
   background-color: rgba(162, 57, 202, 0.25);
   color: #a239ca;
@@ -153,15 +160,15 @@ code {
   transition: all 0.5s;
 }
 
-/* Note that active styling below will also be styles
-   set programatically after button is clicked.
-*/
-
-#validateZip:active {
+.controlButton:active {
   border: 3px inset #ff0000;
   background-color: #d9d9d9;
   color: #ff0000;
   transition: all ease-in-out 1s;
+}
+
+#validate {
+  margin-bottom: 15px;
 }
 
 /**
@@ -172,35 +179,42 @@ code {
  *
 */
 
-#results {
+.test-data-dimensions {
   overflow: auto;
-  --scrollbar-foreground: #a239ca;
-  --scrollbar-background: rgba(162, 57, 202, 0.25);
-  scrollbar-color: var(--scrollbar-foreground) var(scrollbar-background);
-  height: 85px;
-  width: 300px;
+  width: 350px;
+  height: 200px;
   border: 3px inset #808080;
-  padding: 6px 15px 3px 15px;
-  background-color: rgba(128, 128, 128, 0.25);
-  background-color: transparent;
+  padding: 12px 35px;
+  margin-left: 150px;
 }
 
-#results::-webkit-scrollbar {
+.results-data-dimensions {
+  overflow: auto;
+  width: 300px;
+  height: 85px;
+  border: 3px inset #808080;
+  padding: 12px 35px;
+}
+
+.custom-scrollbar {
+  --scrollbar-foreground: #a239ca;
+  --scrollbar-background: rgba(162, 57, 202, 0.25);
+  /* Foreground and Background Colors */
+  scrollbar-color: var(--scrollbar-foreground) var(--scrollbar-background);
+}
+
+.custom-scrollbar::-webkit-scrollbar {
   width: 18px;
   height: 18px;
   border: 2px solid #000000;
 }
 
-#results::-webkit-scrollbar-thumb {
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  /* Foreground Color */
   background: var(--scrollbar-foreground);
 }
 
-#resuls::-webkit-scrollbar-track {
-  background: var(--scrollbar-background);
-}
-
-#results p {
-  font-family: 'Roboto Mono', 'Courier New', monospace;
-  font-size: 17.5px;
-  margin: 0 0 3px 0;
+.custom-scrollbar::-webkit-scrollbar-track {
+  /* Background Color */
+  background: var(--scollbar-background);
 }

@@ -9,7 +9,7 @@
 // Capture necessary DOM nodes.
 
 const scrim = document.getElementsByClassName('body'); 
-const resultButton = document.getElementById("validateZip");
+const resultButton = document.getElementById("validate");
 const resultBox = document.getElementById('results');
 const fullView = document.getElementById('expandedView');
 const exit = document.getElementById('exit');
