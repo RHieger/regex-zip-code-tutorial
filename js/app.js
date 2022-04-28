@@ -8,8 +8,8 @@
 
 // Capture necessary DOM nodes.
 
-const scrim = document.getElementsByClassName('body'); 
-const resultButton = document.getElementById("validate");
+const resultButton = document.getElementById('validate');
+const resetButton = document.getElementById('reset')
 const resultBox = document.getElementById('results');
 const fullView = document.getElementById('expandedView');
 const exit = document.getElementById('exit');
@@ -65,12 +65,6 @@ const appendParagraphs = (parent, children) => {
   }
 )};
 
-// Modal Callback Functions
-
-const toggleWindow = (node) => {
-  node.classList.toggle('hidden');
-};
-
 const paragraphText = [
   createParagraph(` Match #1: ${matches[0]}`),
   createParagraph(` Match #2: ${matches[1]}`),
@@ -92,5 +86,14 @@ const populateResultBox = () => {
 
 };
 
-// Validation Button event listener.
+const depopulateResultBox = () => {
+  while (resultBox.firstChild) {
+    resultBox.removeChild(resultBox.firstChild);
+  }
+}
+
+// Validation Button event listener
 resultButton.addEventListener('click', populateResultBox);
+
+// Reset Button event listener
+resetButton.addEventListener('click', depopulateResultBox);
