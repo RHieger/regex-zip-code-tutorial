@@ -30,8 +30,9 @@ header h1 {
 h2 {
   font-family: 'Raleway', 'Helvetica', sans-serif;
   font-size: 32;
-  font-weight: 700;
+  font-weight: 800;
   letter-spacing: 0.75px;
+  font-variant: small-caps;
   color: #a239ca;
   margin-top: 0;
   margin-bottom: 12px;
@@ -57,12 +58,7 @@ p {
   letter-spacing: 0.55px;
 }
 
-.testString {
-  font-family: 'Roboto', sans-serif;
-  font-size: 17px;
-}
-
-code {
+.testString, code {
   display: block;
   width: 50%;
   margin: 0 auto;
@@ -70,6 +66,11 @@ code {
   font-size: 21px;
   letter-spacing: 0.55px;
   text-align: center;
+}
+
+.testString {
+  text-align: left;
+  font-size: 23px;
 }
 
 .callOutBox {
@@ -83,7 +84,7 @@ code {
 
 .divider {
   width: 65%;
-  margin: 15px auto;
+  margin: 25px auto 15px auto;
   border-top: 5px dotted #a239ca;
 }
 
@@ -119,70 +120,6 @@ code {
   letter-spacing: 2.5px;
 }
 
-.maximize {
-  position: relative;
-  margin-top: -13px;
-  margin-left: 798px;
-  width: 30px;
-  height: 20px;
-  background-color: rgba(192, 192, 192, 0.25); /* Silver #c0c0c0 */
-  border: 5px outset #b2beb5; /* Ash Gray */
-  box-shadow: 2px -3px 0 #000000;
-  cursor: pointer;
-}
-
-.expandedView {
-  position: absolute;
-  z-index: 99;
-  top: 115px;
-  left: 425px;
-  width: 45%;
-  border: 6px outset #a239ca;
-  border-radius: 12px;
-  background-color: #d9d9d9;
-  padding: 6px 35px 3px 35px;
-}
-
-.expandedView p {
-  font-family: 'Roboto Mono', 'Courier New', monospace;
-  font-size: 21px;
-  font-weight: 500
-}
-
-.expandedView h3 {
-  margin-top: -12px;
-}
-
-.scrim {
-  position: fixed;
-  top: 0;
-  height: 100vh;
-  width: 100vw;
-  background-color: rgba(0, 0, 0, 0.45);
-  z-index: 2;
-}
-
-.xBoxExit {
-  position: relative;
-  width: 23px;
-  height: 23px;
-  background-color: #ff0000;
-  color: #ffffff;
-  border: 5px outset #9d9d9d;
-  margin-top: -6px;
-  margin-left: 758px;
-  cursor: pointer;
-}
-
-.xBoxExit p {
-  font-family: 'Roboto Mono', 'Courier New', monospace;
-  font-size: 22px;
-  font-weight: 500;
-  text-align: center;
-  margin-top: -2px;
-  margin-bottom: 0;
-}
-
 .hidden {
   display: none;
 }
@@ -194,7 +131,14 @@ code {
   justify-content: space-between;
 }
 
-#validateZip {
+.verticalButtonGroup {
+  display: flex;
+  flex-direction: column;
+  height: 85px;
+  justify-items: center;
+}
+
+.controlButton {
   margin-left: 415px;
   height: 40px;
   width: 200px;
@@ -209,7 +153,7 @@ code {
   cursor: pointer;
 }
 
-#validateZip:hover {
+.controlButton:hover {
   border: 3px inset #a239ca;
   background-color: rgba(162, 57, 202, 0.25);
   color: #a239ca;
@@ -217,15 +161,15 @@ code {
   transition: all 0.5s;
 }
 
-/* Note that active styling below will also be styles
-   set programatically after button is clicked.
-*/
-
-#validateZip:active {
+.controlButton:active {
   border: 3px inset #ff0000;
   background-color: #d9d9d9;
   color: #ff0000;
   transition: all ease-in-out 1s;
+}
+
+#validate {
+  margin-bottom: 15px;
 }
 
 /**
@@ -236,35 +180,65 @@ code {
  *
 */
 
-#results {
+.test-data-dimensions {
   overflow: auto;
-  --scrollbar-foreground: #a239ca;
-  --scrollbar-background: rgba(162, 57, 202, 0.25);
-  scrollbar-color: var(--scrollbar-foreground) var(scrollbar-background);
-  height: 85px;
-  width: 300px;
+  width: 350px;
+  height: 200px;
   border: 3px inset #808080;
-  padding: 6px 15px 3px 15px;
-  background-color: rgba(128, 128, 128, 0.25);
-  background-color: transparent;
+  padding: 12px 35px;
+  margin-left: 150px;
 }
 
-#results::-webkit-scrollbar {
+.results-data-dimensions {
+  overflow: auto;
+  width: 300px;
+  height: 75px;
+  border: 3px inset #808080;
+  padding: 3px 35px 12px 35px;
+}
+
+.default-result {
+  background-color: #808080;
+}
+
+#results .default-message {
+  margin-top: 28px;
+  font-family: 'Raleway', 'Helvetica', sans-serif;
+  font-size: 32px;
+  letter-spacing: 1px;
+  font-weight: 700;
+  font-variant: small-caps;
+  text-align: center;
+  color: #ffffff;
+  text-shadow: 2px 3px 3px #a239ca;
+  vertical-align: middle;
+}
+
+#results p {
+  font-family: 'Roboto Mono', 'Tahoma', monspace;
+  font-size: 19px;
+  margin: 0 0 3px 0;
+}
+
+.custom-scrollbar {
+  --scrollbar-foreground: #a239ca;
+  --scrollbar-background: rgba(162, 57, 202, 0.25);
+  /* Foreground and Background Colors */
+  scrollbar-color: var(--scrollbar-foreground) var(--scrollbar-background);
+}
+
+.custom-scrollbar::-webkit-scrollbar {
   width: 18px;
   height: 18px;
   border: 2px solid #000000;
 }
 
-#results::-webkit-scrollbar-thumb {
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  /* Foreground Color */
   background: var(--scrollbar-foreground);
 }
 
-#resuls::-webkit-scrollbar-track {
-  background: var(--scrollbar-background);
-}
-
-#results p {
-  font-family: 'Roboto Mono', 'Courier New', monospace;
-  font-size: 17.5px;
-  margin: 0 0 3px 0;
+.custom-scrollbar::-webkit-scrollbar-track {
+  /* Background Color */
+  background: var(--scollbar-background);
 }

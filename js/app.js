@@ -8,13 +8,14 @@
 
 // Capture necessary DOM nodes.
 
-const scrim = document.getElementsByClassName('body'); 
-const resultButton = document.getElementById("validateZip");
+const resultButton = document.getElementById('validate');
+const resetButton = document.getElementById('reset')
 const resultBox = document.getElementById('results');
 const fullView = document.getElementById('expandedView');
 const exit = document.getElementById('exit');
 const xMark = document.getElementById('x');
 const shadedView = document.getElementById('backdrop');
+const placeHolder = document.getElementById('message');
 
  const testString =
  `10003 
@@ -45,8 +46,6 @@ const regex = /^[^A-Za-z][0-9]{5}(-[0-9]{4})?/gm;
 
 const matches = testString.match(regex);
 
-console.log(matches);
-
 /** The algorithm below is adapted freely from a YouTube
  *  tutorial at this URL:
  *  https://www.youtube.com/watch?v=1s4s_lU83pM
@@ -65,12 +64,6 @@ const appendParagraphs = (parent, children) => {
   }
 )};
 
-// Modal Callback Functions
-
-const toggleWindow = (node) => {
-  node.classList.toggle('hidden');
-};
-
 const paragraphText = [
   createParagraph(` Match #1: ${matches[0]}`),
   createParagraph(` Match #2: ${matches[1]}`),
@@ -87,10 +80,26 @@ const paragraphText = [
 
 const populateResultBox = () => {
   
+  results.classList.remove('default-result');
+  results.removeChild(placeHolder);
+  results.classList.add('custom-scrollbar');
+  
   // Append all result paragraphs to resultBox.
   appendParagraphs(resultBox, paragraphText);
 
 };
 
-// Validation Button event listener.
+const depopulateResultBox = () => {
+  while (resultBox.firstChild) {
+    resultBox.removeChild(resultBox.firstChild);
+  }
+  results.classList.remove('custom-scrollbar');
+  results.classList.add('default-result');
+  results.appendChild(placeHolder);
+}
+
+// Validation Button event listener
 resultButton.addEventListener('click', populateResultBox);
+
+// Reset Button event listener
+resetButton.addEventListener('click', depopulateResultBox);

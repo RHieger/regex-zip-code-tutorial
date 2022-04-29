@@ -17,7 +17,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
 
   <!-- Typeface for Code -->
-  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="./css/zipcodes.css">
 
@@ -48,10 +50,6 @@
 
   <section id="dataSet">
 
-    <div class="maximize">
-
-    </div>
-
     <h2>
       Test Data
     </h2>
@@ -59,18 +57,33 @@
     <div id="testData">
 
         <!-- DATA SET TO BE PASSED TO REGULAR EXPESSION -->
-        <p>
-          Click on the expand box for complete test data.
-        </p>
+      <div class="test-data-dimensions custom-scrollbar">
         <p class="testString">
           10003<br />
           asdf10003<br />
           10003asdf<br />
           jklm10003^$@%<br />
           10003-8924<br />
-          one zero zero zero three.<br />
-          9101-94015&hellip;
+          one zero zero zero three<br />
+          9101-94015<br />
+          94015-9101<br />
+          20012<br />
+          08735<br />
+          KbdsD$%^&*<br />
+          sSd070031jKl;m<br />
+          70122<br />
+          \sKu2034.<br />
+          98108<br />
+          75381<br />
+          asdfjkl;<br />
+          60661<br />
+          !90004!@#$5^&*<br />
+          97218<br />
+          #,.$$&&%@<br />
+          10022-3337<br />
+          eNuhfF!.
         </p>
+      </div>
 
         <hr class="divider" />
 
@@ -89,60 +102,21 @@
   </section>
 
   <div id="getResults">
-  
-    <button id="validateZip">Validate Zip Codes</button>
+    <div class="verticalButtonGroup">
+      <button class="controlButton" id="validate">
+        Validate Zip Codes
+      </button>
+      <button class="controlButton" id="reset">
+        Reset
+      </button>
+    </div>
 
-    <div id="results">
+    <div id="results"
+    class="results-data-dimensions default-result">
+      <p class="default-message" id="message">no match</p>
       <!-- Dynamic content lives here. -->
     </div>
 
-  </div>
-
-  <!-- MODAL -->
-
-  <div class="expandedView hidden" id="expandedView">
-    <div class="exit" id="exit">
-      <div class="xBoxExit" id="x">
-        <p>X</p>
-    </div>
-    <div class="data">
-
-      <h3>
-        Complete Test String
-      </h3>
-
-      <p>
-        10003<br />
-        asdf10003<br />
-        10003asdf<br />
-        jklm10003^$@%<br />
-        10003-8924<br />
-        one zero zero zero three.<br />
-        9101-94015<br />
-        94015-9101<br />
-        20012<br />
-        08735<br />
-        KbdsD$%^&*<br />
-        sSd070031jKl;m<br />
-        70122<br />
-        \sKu2034.<br />
-        98108<br />
-        75381<br />
-        asdfjkl;9<br />
-        60661<br />
-        !90004!@#$5^&*<br />
-        97218<br />
-        #,.$$&&%@<br />
-        10022-3337<br />eNuhfF!.
-      </p>
-    </div>
-    </div>
-  </div>
-
-  <!-- Scrim Element Backdrop -->
-
-  <div id="backdrop">
-    <!-- Dynamic content lives here. -->
   </div>
 
 </body>
