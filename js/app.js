@@ -46,8 +46,6 @@ const regex = /^[^A-Za-z][0-9]{5}(-[0-9]{4})?/gm;
 
 const matches = testString.match(regex);
 
-console.log(matches);
-
 /** The algorithm below is adapted freely from a YouTube
  *  tutorial at this URL:
  *  https://www.youtube.com/watch?v=1s4s_lU83pM
