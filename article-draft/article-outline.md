@@ -15,3 +15,19 @@ I. **Introduction**
 
 II. **Introduce Project**
 
+  1. What are We Going to Build?  
+    i. A Word about Data Validation  
+    ii. A Word about the Role of Regex  
+    iii. Screenshot of Completed Application Opening Screen
+    
+III. **Key Concepts of Regular Expressions as Relevant to Application**  
+    
+1. Disclaimer&mdash;cannot teach all Regex in this article
+1. What are Regular Expressions?  
+1. Brief Historical Perspective  
+3. Different Flavors of Regular Expressions  
+i. PCRE  
+ii. FREJ  
+iii. EXMASCRIPT  
+iv. XRegExp
+1. Just Enough Regex
