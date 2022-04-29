@@ -30,8 +30,9 @@ header h1 {
 h2 {
   font-family: 'Raleway', 'Helvetica', sans-serif;
   font-size: 32;
-  font-weight: 700;
+  font-weight: 800;
   letter-spacing: 0.75px;
+  font-variant: small-caps;
   color: #a239ca;
   margin-top: 0;
   margin-bottom: 12px;
@@ -191,9 +192,32 @@ p {
 .results-data-dimensions {
   overflow: auto;
   width: 300px;
-  height: 85px;
+  height: 75px;
   border: 3px inset #808080;
-  padding: 12px 35px;
+  padding: 3px 35px 12px 35px;
+}
+
+.default-result {
+  background-color: #808080;
+}
+
+#results .default-message {
+  margin-top: 28px;
+  font-family: 'Raleway', 'Helvetica', sans-serif;
+  font-size: 32px;
+  letter-spacing: 1px;
+  font-weight: 700;
+  font-variant: small-caps;
+  text-align: center;
+  color: #ffffff;
+  text-shadow: 2px 3px 3px #a239ca;
+  vertical-align: middle;
+}
+
+#results p {
+  font-family: 'Roboto Mono', 'Tahoma', monspace;
+  font-size: 19px;
+  margin: 0 0 3px 0;
 }
 
 .custom-scrollbar {

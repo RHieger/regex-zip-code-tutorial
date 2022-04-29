@@ -15,6 +15,7 @@ const fullView = document.getElementById('expandedView');
 const exit = document.getElementById('exit');
 const xMark = document.getElementById('x');
 const shadedView = document.getElementById('backdrop');
+const placeHolder = document.getElementById('message');
 
  const testString =
  `10003 
@@ -81,6 +82,10 @@ const paragraphText = [
 
 const populateResultBox = () => {
   
+  results.classList.remove('default-result');
+  results.removeChild(placeHolder);
+  results.classList.add('custom-scrollbar');
+  
   // Append all result paragraphs to resultBox.
   appendParagraphs(resultBox, paragraphText);
 
@@ -90,6 +95,9 @@ const depopulateResultBox = () => {
   while (resultBox.firstChild) {
     resultBox.removeChild(resultBox.firstChild);
   }
+  results.classList.remove('custom-scrollbar');
+  results.classList.add('default-result');
+  results.appendChild(placeHolder);
 }
 
 // Validation Button event listener
