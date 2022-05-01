@@ -60,7 +60,7 @@ p {
 
 .testString, code {
   display: block;
-  width: 50%;
+  width: 65%;
   margin: 0 auto;
   font-family: 'Roboto Mono', 'Courier New', monospace;
   font-size: 21px;
@@ -182,7 +182,7 @@ p {
 
 .test-data-dimensions {
   overflow: auto;
-  width: 350px;
+  width: 500px;
   height: 200px;
   border: 3px inset #808080;
   padding: 12px 35px;
