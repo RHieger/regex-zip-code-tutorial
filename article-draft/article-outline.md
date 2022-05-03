@@ -31,4 +31,5 @@ III. **Key Concepts of Regular Expressions as Relevant to Application**
 &nbsp;&nbsp;&nbsp;&nbsp;b. FREJ  
 &nbsp;&nbsp;&nbsp;&nbsp;c. EXMASCRIPT  
 &nbsp;&nbsp;&nbsp;&nbsp;d. XRegExp
-1. Just Enough Regex
+1. Just Enough Regex  
+  i. The Anatomy of a Regular Expression
