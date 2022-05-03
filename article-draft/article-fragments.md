@@ -102,3 +102,53 @@ The JavaScript flavor of **regular expressions** has six flags, but we will conf
 1. `i`&mdash;the case-insensitive flag specifies that alphanumeric characters will be matched whether they are upper case or lower case.
 1. `g`&mdash;the global flag specifies that all mmatches from beginning to end of the test string will be returned. By default, the **regex** engine would read the test string from left to right and once it returns the first match, would exit, ignoring any matches beyond the first.
 1. `m`&mdash;the multiline flag ensures that the engine continues to search beyond the boundary of a line of text to any lines of text that follow.
+
+<hr style="border-top: 3px solid #0000ff;" />
+
+**OKAY.** Let's take a deep breath. I know that was an awful lot of stuff and some of it might have even been a bit confusing. That's about to change.
+
+### The Regex Tear-Down
+
+We are now ready to analyze the regular expression central to the web application we are going to build. Let's look at it again in all its glory:  
+
+
+```
+/^[^A-Za-z][0–9]{5}(-[0–9]{4})?/gm
+```
+
+#### Taking It Apart
+
+Let's start be examining the outermost parts of this expression. The shell of our **regular expression** looks like this:
+
+```
+//gm
+```
+
+**_What does this little fragment say on its own?_** Not much, as no pattern has been specified as yet. Nonetheless, this fragment sets the stage for how any pattern appearing between the forward slash delimiters will be treated.
+
+Using the definitions of regex flags above, this fragment says to the **regex engine** &ldquo;Match all instances of the pattern speecified between the delimiters (global matching) and consider each line of the test string separately (multiline matching). **Not much yet,** but the engine now knows how to treat whatever pattern is defined for it between the delimiters.
+
+##### The First Half of the Pattern
+Now let's look at the individual pieces of the pattern. The first piece of this pattern throws us a small curveball because it uses the `^` anchor about which we learned a bit earlier in a different way. Let's take a look at the first pattern fragment:  
+
+```^[^A-Za-z][0–9]{5}```  
+
+First we have the `^` beginning of string anchor, which declares the start of our pattern. Next we have a character set enclosed in square brackets, but with a twist. The `^` anchor immediately precedes two character ranges of `A-Z` and `a-z`. **_But wait a minute. There can't be two beginnings to a string, can there?_**  
+
+_No, of course not._ The answer is that when the `^` caret symbol, normally known as the beginning of string anchor, appears at the beginning of a character set enclosed by square brackets, it has a completely different meaning. In this instance the caret is the **set negation character.**  
+
+In other words, the two ranges of characters&mdash;uppercase **A** through **Z** and lowercase **a** through **z**&mdash;are negated. That is, the character set comprised of these two character ranges will not be returned as a match. They will be excluded from any match returned.  
+
+Next we have a character set consisting of digits ranging from **0** through **9**. This character set is followed immediately by a quantifier of `{5}`. Taken together, the character set and the quantifier specify that any set of exactly 5 digits in the range of **0** through **9** will be returned as a match.  
+
+Now we have the first half of our regular expression:  
+
+```
+/^[^A-Za-z][0–9]{5}/gm
+```  
+
+What this says all together to the **regex engine** is _"Search for and return all matches across all lines of the test string that start with any combination of exactly 5 digits, and that are not preceded by any alphanumeric characters."_  
+
+Taken on its own, the first half of our regular expression is complete in and of itself and will return any 5 digit zip code that it finds in our test string.  
+
+**But there's still a problem.** What we have so far will bypass any valid +4 zip codes embedded in the text. The second half of our regular expression will address this problem.

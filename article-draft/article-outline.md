@@ -33,3 +33,5 @@ III. **Key Concepts of Regular Expressions as Relevant to Application**
 &nbsp;&nbsp;&nbsp;&nbsp;d. XRegExp
 1. Just Enough Regex  
   i. The Anatomy of a Regular Expression
+  
+IV. **The Regex Tear-Down**
