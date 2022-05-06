@@ -6,96 +6,56 @@
  * matches of valid zip codes from test string.
  */
 
+
 // Capture necessary DOM nodes.
 
-const resultButton = document.getElementById('validate');
-const resetButton = document.getElementById('reset')
-const resultBox = document.getElementById('results');
-const placeHolder = document.getElementById('message');
+/* TO BE DONE: DOM Node Objects */
 
- const testString =
- `10003 
- asdf10003
- 10003asdf
- jklm10003^$@%
- 10003-8924
- one zero zero zero three
- 9101-94015
- 94015-9101
- 20012
- 08735
- KbdsD$%^&*
- sSd070031jKl;m
- 70122
- \sKu2034.
- 98108
- 75381
- asdfjkl;
- 60661
- !90004!@#$5^&*
- 97218
- #,.$$&&%@
- 10022-3337
- eNuhfF!.`;
+// Test String to be passed to regular expression: 
 
-const regex = /^[^A-Za-z][0-9]{5}(-[0-9]{4})?/gm;
+/* TO BE DONE: Declare trest string. */
 
-const matches = testString.match(regex);
+// Regular Expression to which testString will be passed:
 
-/** The algorithm below is adapted freely from a YouTube
+/* TO BE DONE: Declare regular expression. */
+
+// Store pattern matches to matches variable:
+
+/* TO BE DONE: declare variable that contains result
+ * of testString passed to regular expression.
+*/
+
+// Functions to manage match data returned by regex engine:
+
+/** These functions derive loosely from a YouTube
  *  tutorial at this URL:
  *  https://www.youtube.com/watch?v=1s4s_lU83pM
  * 
 */
 
-const createParagraph = (text) => {
-  const paragraph = document.createElement('p');
-  paragraph.textContent = text;
-  return paragraph;
-};
+// Function to Create Paragraph Element:
 
-const appendParagraphs = (parent, children) => {
-  children.forEach( (child) => {
-    parent.appendChild(child);
-  }
-)};
+/* TO BE DONE: createParagraph() */
 
-const paragraphText = [
-  createParagraph(` Match #1: ${matches[0]}`),
-  createParagraph(` Match #2: ${matches[1]}`),
-  createParagraph(` Match #3: ${matches[2]}`),
-  createParagraph(` Match #4: ${matches[3]}`),
-  createParagraph(` Match #5: ${matches[4]}`),
-  createParagraph(` Match #6: ${matches[5]}`),
-  createParagraph(` Match #7: ${matches[6]}`),
-  createParagraph(` Match #8: ${matches[7]}`),
-  createParagraph(` Match #9: ${matches[8]}`),
-  createParagraph(`Match #10: ${matches[9]}`),
-  createParagraph(`Match #11: ${matches[10]}`)
-];
 
-const populateResultBox = () => {
-  
-  results.classList.remove('default-result');
-  results.removeChild(placeHolder);
-  results.classList.add('custom-scrollbar');
-  
-  // Append all result paragraphs to resultBox.
-  appendParagraphs(resultBox, paragraphText);
+// Function to Add Paragraph (match) to Result Box:
 
-};
+/* TO BE DONE: appendParagraphs() */
 
-const depopulateResultBox = () => {
-  while (resultBox.firstChild) {
-    resultBox.removeChild(resultBox.firstChild);
-  }
-  results.classList.remove('custom-scrollbar');
-  results.classList.add('default-result');
-  results.appendChild(placeHolder);
-}
+// Function to set textContent for all match paragraphs:
 
-// Validation Button event listener
-resultButton.addEventListener('click', populateResultBox);
+/* TO BE DONE: paragraphText[] */
 
-// Reset Button event listener
-resetButton.addEventListener('click', depopulateResultBox);
+// Function to Populate Result Box with finished paragraphs:
+
+/* TO BE DONE: populateResultBox() */
+
+// Function to Remove result Paragraphs from Result Box:
+
+/* TO BE DONE: depopulateResultBox() */
+
+// Event Listeners to populate Result Box and depopulate it:
+
+/* TO BE DONE: Event Listener for Validate Zip Codes Button */
+
+/* TO BE DONE: Event Listener for Reset Button */
