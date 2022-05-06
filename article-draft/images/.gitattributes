@@ -5,3 +5,4 @@ stephen-cole-kleene.jpeg filter=lfs diff=lfs merge=lfs -text
 table-1.png filter=lfs diff=lfs merge=lfs -text
 fig-3-project-file-structure.png filter=lfs diff=lfs merge=lfs -text
 fig-4-bare-bones.png filter=lfs diff=lfs merge=lfs -text
+fig-1-applican-landing-page.png filter=lfs diff=lfs merge=lfs -text
