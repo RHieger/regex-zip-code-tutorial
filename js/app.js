@@ -11,10 +11,6 @@
 const resultButton = document.getElementById('validate');
 const resetButton = document.getElementById('reset')
 const resultBox = document.getElementById('results');
-const fullView = document.getElementById('expandedView');
-const exit = document.getElementById('exit');
-const xMark = document.getElementById('x');
-const shadedView = document.getElementById('backdrop');
 const placeHolder = document.getElementById('message');
 
  const testString =
