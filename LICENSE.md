@@ -3,8 +3,7 @@ GNU GENERAL PUBLIC LICENSE<br />
 Version 3, 29 June 2007
 </h1>
 
- Copyright (C) 2007 Free Software Foundation, Inc. <https://fsf.org/>&emsp;Everyone is permitted to copy and distribute verbatim copies
- of this license document, but changing it is not allowed.
+ Copyright (C) 2007 Free Software Foundation, Inc. <https://fsf.org/>&emsp;Everyone is permitted to copy and distribute verbatim copies of this license document, but changing it is not allowed.
  
  <h2 align="center">
  Preamble

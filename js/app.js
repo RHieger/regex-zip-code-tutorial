@@ -2,10 +2,16 @@
  * 
  * Regex Zip Code Tutorial--Mini Web Application
  * 
+ * Robert Hieger
+ * 
  * Validates and dynamically updates display to show
  * matches of valid zip codes from test string.
+ * 
+ * The software contained in this tutorial is licensed
+ * under the GNU GENERAL PUBLIC LICENSE version 3,
+ * June 29, 2007 included in this archive.
+ * 
  */
-
 
 // Capture necessary DOM nodes.
 
