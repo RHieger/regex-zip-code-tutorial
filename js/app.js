@@ -19,7 +19,7 @@
 
 // Test String to be passed to regular expression: 
 
-/* TO BE DONE: Declare trest string. */
+/* TO BE DONE: Declare test string. */
 
 // Regular Expression to which testString will be passed:
 
