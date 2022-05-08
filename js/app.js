@@ -2,8 +2,15 @@
  * 
  * Regex Zip Code Tutorial--Mini Web Application
  * 
+ * Robert Hieger
+ * 
  * Validates and dynamically updates display to show
  * matches of valid zip codes from test string.
+ * 
+ * The software contained in this tutorial is licensed
+ * under the GNU GENERAL PUBLIC LICENSE version 3,
+ * June 29, 2007 included in this repository.
+ * 
  */
 
 // Capture necessary DOM nodes.
@@ -13,32 +20,32 @@ const resetButton = document.getElementById('reset')
 const resultBox = document.getElementById('results');
 const placeHolder = document.getElementById('message');
 
- const testString =
- `10003 
- asdf10003
- 10003asdf
- jklm10003^$@%
- 10003-8924
- one zero zero zero three
- 9101-94015
- 94015-9101
- 20012
- 08735
- KbdsD$%^&*
- sSd070031jKl;m
- 70122
- \sKu2034.
- 98108
- 75381
- asdfjkl;
- 60661
- !90004!@#$5^&*
- 97218
- #,.$$&&%@
- 10022-3337
- eNuhfF!.`;
+const testString =
+`10003
+asdf10003
+10003asdf
+jklm10003^$@%
+10003-8924
+one zero zero zero three
+9101-94015
+94015-9101
+20012
+08735
+KbdsD$%^&*
+sSd070031jKl;m
+70122
+\sKu2034
+98108
+75381
+asdfjkl;
+60661
+!9004!@#$5^&*
+97218
+#,.$$&&%@
+10022-3337
+eNuhfF!.`; 
 
-const regex = /^[^A-Za-z][0-9]{5}(-[0-9]{4})?/gm;
+const regex = /^[0-9]{5}(-[0-9]{4})?$/gm;
 
 const matches = testString.match(regex);
 
