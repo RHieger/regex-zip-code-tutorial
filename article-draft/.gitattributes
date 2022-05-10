@@ -1,2 +1,0 @@
-images/table-2.png filter=lfs diff=lfs merge=lfs -text
-other[[:space:]]assets/Regex[[:space:]]Quantifiers.docx filter=lfs diff=lfs merge=lfs -text
