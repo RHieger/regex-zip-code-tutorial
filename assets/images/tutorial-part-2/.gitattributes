@@ -7,3 +7,4 @@ fig5-elements-to-be-captured.png filter=lfs diff=lfs merge=lfs -text
 code-listing-2.png filter=lfs diff=lfs merge=lfs -text
 fig6-chrome-console.png filter=lfs diff=lfs merge=lfs -text
 fig7-console-with-nodes.png filter=lfs diff=lfs merge=lfs -text
+fig8-console-matches.png filter=lfs diff=lfs merge=lfs -text
