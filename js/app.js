@@ -62,12 +62,6 @@ const createParagraph = (text) => {
   return paragraph;
 };
 
-const appendParagraphs = (parent, children) => {
-  children.forEach( (child) => {
-    parent.appendChild(child);
-  }
-)};
-
 const paragraphText = [
   createParagraph(` Match #1: ${matches[0]}`),
   createParagraph(` Match #2: ${matches[1]}`),
@@ -81,6 +75,12 @@ const paragraphText = [
   createParagraph(`Match #10: ${matches[9]}`),
   createParagraph(`Match #11: ${matches[10]}`)
 ];
+
+const appendParagraphs = (parent, children) => {
+  children.forEach( (child) => {
+    parent.appendChild(child);
+  }
+)};
 
 const populateResultBox = () => {
   
