@@ -56,8 +56,10 @@ const matches = testString.match(regex);
  * 
 */
 
-const paragraphText = [];
 
+const paragraphText = []; // will contain array of textContent
+
+// Create text content for paragraphs containing matches.
 createParagraphText = () => {
   for (match in matches) {
     let matchNumber = parseInt(match) + 1;
@@ -67,50 +69,43 @@ createParagraphText = () => {
   }
 };
 
-// createParagraphText = (match) => {
-//   for (match in matches) {
-//     let matchNumber = lastIndexOf(matches) + 1;
-//     paragraphText.push(
-//       `Match #${matchNumber}: ${match}`
-//   }
-//   });
-// };
+const paragraphs = [];  // will contain array of complete paragraphs
 
-createParagraphText();
+// Assemble all result paragraphs.
+const createParagraphs = () => {
+  for (text in paragraphText) {
+    const paragraph = document.createElement('p');
+    paragraph.textContent = paragraphText[text];
+    paragraphs.push(paragraph);
+  }
+};
 
-/*
-const paragraphText = [
-  createParagraph(` Match #1: ${matches[0]}`),
-  createParagraph(` Match #2: ${matches[1]}`),
-  createParagraph(` Match #3: ${matches[2]}`),
-  createParagraph(` Match #4: ${matches[3]}`),
-  createParagraph(` Match #5: ${matches[4]}`),
-  createParagraph(` Match #6: ${matches[5]}`),
-  createParagraph(` Match #7: ${matches[6]}`),
-  createParagraph(` Match #8: ${matches[7]}`),
-  createParagraph(` Match #9: ${matches[8]}`),
-  createParagraph(`Match #10: ${matches[9]}`),
-  createParagraph(`Match #11: ${matches[10]}`)
-];
-*/
-
+// Append all paragraphs as children of the result box.
 const appendParagraphs = (parent, children) => {
   children.forEach( (child) => {
     parent.appendChild(child);
   }
 )};
 
+// Inject paragraph content with matches into the result box.
 const populateResultBox = () => {
   
   results.classList.remove('default-result');
   results.removeChild(placeHolder);
   results.classList.add('custom-scrollbar');
+
+  // Create paragraph textContent.
+  createParagraphText();
+
+  // Create paragraphs and set textContent.
+  createParagraphs();
   
   // Append all result paragraphs to resultBox.
-  // appendParagraphs(resultBox, paragraphText);
+  appendParagraphs(resultBox, paragraphs);
 
 };
 
+// Remove all paragraphs from result box restoring default screen.
 const depopulateResultBox = () => {
   while (resultBox.firstChild) {
     resultBox.removeChild(resultBox.firstChild);
