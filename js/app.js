@@ -56,6 +56,7 @@ const matches = testString.match(regex);
  * 
 */
 
+
 const paragraphText = [];
 
 createParagraphText = () => {
@@ -67,32 +68,15 @@ createParagraphText = () => {
   }
 };
 
-// createParagraphText = (match) => {
-//   for (match in matches) {
-//     let matchNumber = lastIndexOf(matches) + 1;
-//     paragraphText.push(
-//       `Match #${matchNumber}: ${match}`
-//   }
-//   });
-// };
+const paragraphs = [];
 
-createParagraphText();
-
-/*
-const paragraphText = [
-  createParagraph(` Match #1: ${matches[0]}`),
-  createParagraph(` Match #2: ${matches[1]}`),
-  createParagraph(` Match #3: ${matches[2]}`),
-  createParagraph(` Match #4: ${matches[3]}`),
-  createParagraph(` Match #5: ${matches[4]}`),
-  createParagraph(` Match #6: ${matches[5]}`),
-  createParagraph(` Match #7: ${matches[6]}`),
-  createParagraph(` Match #8: ${matches[7]}`),
-  createParagraph(` Match #9: ${matches[8]}`),
-  createParagraph(`Match #10: ${matches[9]}`),
-  createParagraph(`Match #11: ${matches[10]}`)
-];
-*/
+const createParagraphs = () => {
+  for (text in paragraphText) {
+    const paragraph = document.createElement('p');
+    paragraph.textContent = paragraphText[text];
+    paragraphs.push(paragraph);
+  }
+};
 
 const appendParagraphs = (parent, children) => {
   children.forEach( (child) => {
@@ -105,9 +89,15 @@ const populateResultBox = () => {
   results.classList.remove('default-result');
   results.removeChild(placeHolder);
   results.classList.add('custom-scrollbar');
+
+  // Create paragraph textContent.
+  createParagraphText();
+
+  // Create paragraphs and set textContent.
+  createParagraphs();
   
   // Append all result paragraphs to resultBox.
-  // appendParagraphs(resultBox, paragraphText);
+  appendParagraphs(resultBox, paragraphs);
 
 };
 
