@@ -1,8 +1,12 @@
 # Tutorial on Regular Expressions—Zip Code Example
 
-This repository contains all development for a tutorial that will be
-published on Medium.com under JavaScript in Plain English.
+## Starter Code
 
-Targeted publication date is 05/08/2022.
+Thank you for hanging in there and now moving on to building our demo **Single Page Application (SPA).**
 
-For further information, visit the [wiki](https://github.com/RHieger/regex-zip-code-tutorial/wiki).
+This archive contains all the assets you will need to begin building the application.
+
+If you have any questions, please leave a comment on either of the tutorial article pages and I will do my best to address your question or suggestion.
+
+In the meantime, happing coding!
+
