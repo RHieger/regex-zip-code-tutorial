@@ -56,12 +56,29 @@ const matches = testString.match(regex);
  * 
 */
 
-const createParagraph = (text) => {
-  const paragraph = document.createElement('p');
-  paragraph.textContent = text;
-  return paragraph;
+const paragraphText = [];
+
+createParagraphText = () => {
+  for (match in matches) {
+    let matchNumber = parseInt(match) + 1;
+    paragraphText.push(
+      `Match #${matchNumber}: ${matches[match]}`
+    );
+  }
 };
 
+// createParagraphText = (match) => {
+//   for (match in matches) {
+//     let matchNumber = lastIndexOf(matches) + 1;
+//     paragraphText.push(
+//       `Match #${matchNumber}: ${match}`
+//   }
+//   });
+// };
+
+createParagraphText();
+
+/*
 const paragraphText = [
   createParagraph(` Match #1: ${matches[0]}`),
   createParagraph(` Match #2: ${matches[1]}`),
@@ -75,6 +92,7 @@ const paragraphText = [
   createParagraph(`Match #10: ${matches[9]}`),
   createParagraph(`Match #11: ${matches[10]}`)
 ];
+*/
 
 const appendParagraphs = (parent, children) => {
   children.forEach( (child) => {
@@ -89,7 +107,7 @@ const populateResultBox = () => {
   results.classList.add('custom-scrollbar');
   
   // Append all result paragraphs to resultBox.
-  appendParagraphs(resultBox, paragraphText);
+  // appendParagraphs(resultBox, paragraphText);
 
 };
 
