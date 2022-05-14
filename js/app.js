@@ -49,6 +49,10 @@
 
 // Assemble all result paragraphs.
 
+/* TO BE DONE: Declare empty array paragraphs[]
+
+// Append text nodes to paragraph nodes.
+
 /* TO BE DONE: create createParagraphs() Function */
 
 // Append all paragraphs as children of the result box.
