@@ -43,7 +43,6 @@
 
 /* TO BE DONE: Declare empty array paragraphText[] */
 
-
 // Create text content for paragraphs containing matches.
 
 /* TO BE DONE: Create createParagraphText() Function */
