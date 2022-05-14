@@ -56,11 +56,10 @@ const matches = testString.match(regex);
  * 
 */
 
-
 const paragraphText = []; // will contain array of textContent
 
 // Create text content for paragraphs containing matches.
-createParagraphText = () => {
+const createParagraphText = () => {
   for (match in matches) {
     let matchNumber = parseInt(match) + 1;
     paragraphText.push(
