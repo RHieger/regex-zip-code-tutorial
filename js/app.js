@@ -89,9 +89,9 @@ const appendParagraphs = (parent, children) => {
 // Inject paragraph content with matches into the result box.
 const populateResultBox = () => {
   
-  results.classList.remove('default-result');
-  results.removeChild(placeHolder);
-  results.classList.add('custom-scrollbar');
+  resultBox.classList.remove('default-result');
+  resultBox.removeChild(placeHolder);
+  resultBox.classList.add('custom-scrollbar');
 
   // Create paragraph textContent.
   createParagraphText();
@@ -109,9 +109,9 @@ const depopulateResultBox = () => {
   while (resultBox.firstChild) {
     resultBox.removeChild(resultBox.firstChild);
   }
-  results.classList.remove('custom-scrollbar');
-  results.classList.add('default-result');
-  results.appendChild(placeHolder);
+  resultBox.classList.remove('custom-scrollbar');
+  resultBox.classList.add('default-result');
+  resultBox.appendChild(placeHolder);
 }
 
 // Validation Button event listener
