@@ -53,22 +53,22 @@
 
 /* TO BE DONE: create createParagraphs() Function */
 
-// Create paragraphs and set textContent only
-// if not already created. Prevents doubling
-// of result data if old paragraphs have not
-// yet beeen garbage collected.
-
 /* TO BE DONE: create appendParagraphs() Function */
 
 /* CALLBACK FUNCTIONS */
 
-// Inject paragraph content with matches into the result box.
+// Create paragraphs and set textContent only
+// if not already created. Prevents doubling
+// of result data if old paragraphs have not
+// yet beeen garbage collected.
 
 /* TO BE DONE: create populateResultBox() Function */
 
 // Remove all paragraphs from result box restoring default screen.
 
 /* TO BE DONE: create depopulateResultBox() Function */
+
+/* EVENT LISTENERS */
 
 // Validation Button event listener
 
