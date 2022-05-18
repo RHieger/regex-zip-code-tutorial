@@ -47,15 +47,16 @@
 
 /* TO BE DONE: Create createParagraphText() Function */
 
-// Assemble all result paragraphs.
-
 /* TO BE DONE: Declare empty array paragraphs[]
 
 // Append text nodes to paragraph nodes.
 
 /* TO BE DONE: create createParagraphs() Function */
 
-// Append all paragraphs as children of the result box.
+// Create paragraphs and set textContent only
+// if not already created. Prevents doubling
+// of result data if old paragraphs have not
+// yet beeen garbage collected.
 
 /* TO BE DONE: create appendParagraphs() Function */
 
