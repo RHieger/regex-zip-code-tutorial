@@ -96,8 +96,13 @@ const populateResultBox = () => {
   // Create paragraph textContent.
   createParagraphText();
 
-  // Create paragraphs and set textContent.
-  createParagraphs();
+  // Create paragraphs and set textContent only
+  // if not already created. Prevents doubling
+  // of result data if old paragraphs have not
+  // yet beeen garbage collected.
+  if (paragraphs.length === 0) {
+    createParagraphs();
+  }
   
   // Append all result paragraphs to resultBox.
   appendParagraphs(resultBox, paragraphs);
@@ -105,14 +110,15 @@ const populateResultBox = () => {
 };
 
 // Remove all paragraphs from result box restoring default screen.
+
 const depopulateResultBox = () => {
-  while (resultBox.firstChild) {
+  while (resultBox.firstElementChild) {
     resultBox.removeChild(resultBox.firstChild);
   }
   resultBox.classList.remove('custom-scrollbar');
   resultBox.classList.add('default-result');
   resultBox.appendChild(placeHolder);
-}
+};
 
 // Validation Button event listener
 resultButton.addEventListener('click', populateResultBox);
