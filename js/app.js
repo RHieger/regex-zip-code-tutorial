@@ -15,23 +15,21 @@
 
 // Capture necessary DOM nodes.
 
-/* TO BE DONE: DOM Node Objects */
+// TO BE DONE: Declare necessary DOM nodes.
 
 // Test String to be passed to regular expression:
 
-/* TO BE DONE: Declare test string */
+//TO BE DONE: Declare testString.
 
 // Regular Expression to which testString will be passed:
 
-/* TO BE DONE: Declare regular expression. */
+// TO BE DONE: Declare regular expression.
 
 // Store pattern matches to matches variable:
 
-/* TO BE DONE: declare variable that contains result 
- * of testString passed to regular expression.
-*/
+// TO BE DONE: Save regex match to matches variable.
 
-// Helper Functions to assemble match data.
+/* HELPER FUNCTIONS */
 
 /** The algorithm below is adapted freely from a YouTube
  *  tutorial at this URL:
@@ -41,39 +39,40 @@
 
 // Array that will contain array of textContent:
 
-/* TO BE DONE: Declare empty array paragraphText[] */
+// TO BE DONE: Declare empty array for text nodes.
 
 // Create text content for paragraphs containing matches.
 
-/* TO BE DONE: Create createParagraphText() Function */
+// TO BE DONE: Code createParagraphText() helper function.
 
-/* TO BE DONE: Declare empty array paragraphs[]
+// Array to contain completed paragraph nodes
+
+// TO BE DONE: Declare paragraphs array to hold complete paragraphs.  
 
 // Append text nodes to paragraph nodes.
 
-/* TO BE DONE: create createParagraphs() Function */
+// TO BE DONE: Code createParagrahs() heper function.
 
-/* TO BE DONE: create appendParagraphs() Function */
+// Append completed paragraphs to ResultBox.
+
+// TO BE DONE: Code appendParagraphs() helper function.
 
 /* CALLBACK FUNCTIONS */
+  
+//  Inject paragraph content with matches into the result box.
 
-// Create paragraphs and set textContent only
-// if not already created. Prevents doubling
-// of result data if old paragraphs have not
-// yet beeen garbage collected.
-
-/* TO BE DONE: create populateResultBox() Function */
+// TO BE DONE: Code populateResultBox() callback function.
 
 // Remove all paragraphs from result box restoring default screen.
 
-/* TO BE DONE: create depopulateResultBox() Function */
+// TO BE DONE: Code depopulateResultBox() callback function.
 
 /* EVENT LISTENERS */
 
 // Validation Button event listener
 
-/* TO BE DONE: create resultButton eventListener */
+// TO BE DONE: Code resultButton event listener.
 
 // Reset Button event listener
 
-/* TO BE DONE: create resetButton eventListener */
+// TO BE DONE: CODE resetButton event listener.
