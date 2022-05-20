@@ -20,6 +20,8 @@ const resetButton = document.getElementById('reset')
 const resultBox = document.getElementById('results');
 const placeHolder = document.getElementById('message');
 
+// Test String to be passed to regular expression:
+
 const testString =
 `10003
 asdf10003
@@ -43,12 +45,17 @@ asdfjkl;
 97218
 #,.$$&&%@
 10022-3337
-eNuhfF!.`; 
+eNuhfF!.`;
+
+// Regular Expression to which testString will be passed:
 
 const regex = /^[0-9]{5}(-[0-9]{4})?$/gm;
 
+// Store pattern matches to matches variable:
+
 const matches = testString.match(regex);
 
+/* HELPER FUNCTIONS */
 
 /** The algorithm below is adapted freely from a YouTube
  *  tutorial at this URL:
@@ -56,9 +63,12 @@ const matches = testString.match(regex);
  * 
 */
 
+// Array that will contain array of textContent:
+
 const paragraphText = []; // will contain array of textContent
 
 // Create text content for paragraphs containing matches.
+
 const createParagraphText = () => {
   for (match in matches) {
     let matchNumber = parseInt(match) + 1;
@@ -68,9 +78,12 @@ const createParagraphText = () => {
   }
 };
 
-const paragraphs = [];  // will contain array of complete paragraphs
+// Array to contain completed paragraph nodes
 
-// Assemble all result paragraphs.
+const paragrahps = [];
+
+// Append text nodes to paragraph nodes.
+
 const createParagraphs = () => {
   for (text in paragraphText) {
     const paragraph = document.createElement('p');
@@ -79,32 +92,35 @@ const createParagraphs = () => {
   }
 };
 
-// Append all paragraphs as children of the result box.
+// Append completed paragraphs to ResultBox.
+
 const appendParagraphs = (parent, children) => {
   children.forEach( (child) => {
     parent.appendChild(child);
   }
 )};
 
+/* CALLBACK FUNCTIONS */
+
 // Inject paragraph content with matches into the result box.
+
 const populateResultBox = () => {
   
   resultBox.classList.remove('default-result');
   resultBox.removeChild(placeHolder);
   resultBox.classList.add('custom-scrollbar');
 
-  // Create paragraph textContent.
-  createParagraphText();
-
   // Create paragraphs and set textContent only
   // if not already created. Prevents doubling
   // of result data if old paragraphs have not
   // yet beeen garbage collected.
+
   if (paragraphs.length === 0) {
     createParagraphs();
   }
   
   // Append all result paragraphs to resultBox.
+  
   appendParagraphs(resultBox, paragraphs);
 
 };
@@ -120,8 +136,12 @@ const depopulateResultBox = () => {
   resultBox.appendChild(placeHolder);
 };
 
+/* EVENT LISTENERS */
+
 // Validation Button event listener
+
 resultButton.addEventListener('click', populateResultBox);
 
 // Reset Button event listener
+
 resetButton.addEventListener('click', depopulateResultBox);
