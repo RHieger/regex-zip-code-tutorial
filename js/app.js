@@ -51,7 +51,7 @@
 
 // Append text nodes to paragraph nodes.
 
-// TO BE DONE: Code createParagrahs() heper function.
+// TO BE DONE: Code createParagrahs() helper function.
 
 // Append completed paragraphs to ResultBox.
 
