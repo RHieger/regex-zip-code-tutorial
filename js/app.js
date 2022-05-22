@@ -111,11 +111,17 @@ const createParagraphs = () => {
 
 // Append completed paragraphs to ResultBox.
 
-const appendParagraphs = (parent, children) => {
-  children.forEach( (child) => {
+const appendParagraphs = (children, parent) => {
+  children.forEach( child => {
     parent.appendChild(child);
-  }
-)};
+  });
+};
+
+// const appendParagraphs = (parent, children) => {
+//   children.forEach( (child) => {
+//     parent.appendChild(child);
+//   }
+// )};
 
 /* CALLBACK FUNCTIONS */
 
@@ -138,7 +144,7 @@ const populateResultBox = () => {
   
   // Append all result paragraphs to resultBox.
   
-  appendParagraphs(resultBox, paragraphs);
+  appendParagraphs(paragraphs, resultBox);
 
 };
 
