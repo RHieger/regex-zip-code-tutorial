@@ -70,13 +70,22 @@ const paragraphText = []; // will contain array of textContent
 // Create text content for paragraphs containing matches.
 
 const createParagraphText = () => {
-  for (match in matches) {
-    let matchNumber = parseInt(match) + 1;
+  matches.forEach( (match) => {
+    let matchNumber = matches.indexOf(match) + 1;
     paragraphText.push(
-      `Match #${matchNumber}: ${matches[match]}`
+      `Match #${matchNumber}: ${match}`
     );
-  }
+  });
 };
+
+// const createParagraphText = () => {
+//   for (match in matches) {
+//     let matchNumber = parseInt(match) + 1;
+//     paragraphText.push(
+//       `Match #${matchNumber}: ${matches[match]}`
+//     );
+//   }
+// };
 
 // Array to contain complete paragraph nodes:
 
