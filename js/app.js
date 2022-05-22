@@ -80,7 +80,7 @@ const createParagraphText = () => {
 
 // Array to contain complete paragraph nodes:
 
-const paragrahps = [];
+const paragraphs = [];
 
 // Append text nodes to paragraph nodes.
 
