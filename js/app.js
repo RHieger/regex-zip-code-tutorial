@@ -45,7 +45,7 @@
 
 // TO BE DONE: Code createParagraphText() helper function.
 
-// Array to contain completed paragraph nodes:
+// Array to contain complete paragraphs
 
 // TO BE DONE: Declare paragraphs array to hold complete paragraphs.  
 
