@@ -16,7 +16,7 @@
 // Capture necessary DOM nodes.
 
 const resultButton = document.getElementById('validate');
-const resetButton = document.getElementById('reset')
+const resetButton = document.getElementById('reset');
 const resultBox = document.getElementById('results');
 const placeHolder = document.getElementById('message');
 
@@ -32,18 +32,18 @@ one zero zero zero three
 9101-94015
 94015-9101
 20012
-08735
+08375
 KbdsD$%^&*
-sSd070031jKl;m
+sSd070031jkl;m
 70122
 \sKu2034
-98108
+93108
 75381
 asdfjkl;
 60661
 !9004!@#$5^&*
 97218
-#,.$$&&%@
+#,.$$&&@
 10022-3337
 eNuhfF!.`;
 
@@ -51,7 +51,8 @@ eNuhfF!.`;
 
 const regex = /^[0-9]{5}(-[0-9]{4})?$/gm;
 
-// Store pattern matches to matches variable:
+// Perform pattern matches and store results
+// in matches array:
 
 const matches = testString.match(regex);
 
@@ -65,73 +66,53 @@ const matches = testString.match(regex);
 
 // Array that will contain array of textContent:
 
-const paragraphText = []; // will contain array of textContent
+const paragraphText = [];
 
 // Create text content for paragraphs containing matches.
 
 const createParagraphText = () => {
-  matches.forEach( (match) => {
-    let matchNumber = matches.indexOf(match) + 1;
+  matches.forEach( match => {
+    let matchNumber = matches.indexOf(match) +1;
     paragraphText.push(
       `Match #${matchNumber}: ${match}`
     );
   });
 };
 
-// const createParagraphText = () => {
-//   for (match in matches) {
-//     let matchNumber = parseInt(match) + 1;
-//     paragraphText.push(
-//       `Match #${matchNumber}: ${matches[match]}`
-//     );
-//   }
-// };
-
-// Array to contain complete paragraph nodes:
+// Array that will contain complete paragraphs
 
 const paragraphs = [];
 
 // Append text nodes to paragraph nodes.
 
 const createParagraphs = () => {
-  paragraphText.forEach( paragraph => {
-    let newParagraph = document.createElement('p');
-    newParagraph.textContent = paragraph;
-    paragraphs.push(newParagraph);
-  });
+  for (text in paragraphText) {
+    const paragraph = document.createElement('p');
+    paragraph.textContent = paragraphText[text];
+    paragraphs.push(paragraph);
+  }
 };
-
-// const createParagraphs = () => {
-//   for (text in paragraphText) {
-//     const paragraph = document.createElement('p');
-//     paragraph.textContent = paragraphText[text];
-//     paragraphs.push(paragraph);
-//   }
-// };
 
 // Append completed paragraphs to ResultBox.
 
-const appendParagraphs = (children, parent) => {
+const appendParagraphs = (parent, children) => {
   children.forEach( child => {
     parent.appendChild(child);
   });
 };
 
-// const appendParagraphs = (parent, children) => {
-//   children.forEach( (child) => {
-//     parent.appendChild(child);
-//   }
-// )};
 
 /* CALLBACK FUNCTIONS */
 
 // Inject paragraph content with matches into the result box.
 
 const populateResultBox = () => {
-  
+
   resultBox.classList.remove('default-result');
   resultBox.removeChild(placeHolder);
   resultBox.classList.add('custom-scrollbar');
+
+  createParagraphText();
 
   // Create paragraphs and set textContent only
   // if not already created. Prevents doubling
@@ -141,17 +122,17 @@ const populateResultBox = () => {
   if (paragraphs.length === 0) {
     createParagraphs();
   }
-  
+
   // Append all result paragraphs to resultBox.
-  
-  appendParagraphs(paragraphs, resultBox);
+
+  appendParagraphs(resultBox, paragraphs);
 
 };
 
 // Remove all paragraphs from result box restoring default screen.
 
 const depopulateResultBox = () => {
-  while (resultBox.firstElementChild) {
+  while (resultBox.firstChild) {
     resultBox.removeChild(resultBox.firstChild);
   }
   resultBox.classList.remove('custom-scrollbar');
