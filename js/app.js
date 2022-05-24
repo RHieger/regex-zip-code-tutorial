@@ -25,7 +25,8 @@
 
 // TO BE DONE: Declare regular expression.
 
-// Store pattern matches to matches variable:
+// Perform pattern matches and store results
+// to matches array:
 
 // TO BE DONE: Save regex match to matches variable.
 
