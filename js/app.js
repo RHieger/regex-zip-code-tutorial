@@ -79,7 +79,7 @@ const createParagraphText = () => {
   });
 };
 
-// Array that will contain complete paragraphs
+// Array to contain completed paragraph nodes:
 
 const paragraphs = [];
 
