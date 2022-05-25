@@ -86,11 +86,11 @@ const paragraphs = [];
 // Append text nodes to paragraph nodes.
 
 const createParagraphs = () => {
-  for (text in paragraphText) {
+  paragraphText.forEach( text => {
     const paragraph = document.createElement('p');
-    paragraph.textContent = paragraphText[text];
+    paragraph.textContent = text;
     paragraphs.push(paragraph);
-  }
+  });
 };
 
 // Append completed paragraphs to ResultBox.
