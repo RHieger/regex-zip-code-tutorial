@@ -3,3 +3,4 @@ code-listing-2.png filter=lfs diff=lfs merge=lfs -text
 code-listing-3.png filter=lfs diff=lfs merge=lfs -text
 code-listing-4.png filter=lfs diff=lfs merge=lfs -text
 code-listing-1.png filter=lfs diff=lfs merge=lfs -text
+fig2-result-box-populated.png filter=lfs diff=lfs merge=lfs -text
