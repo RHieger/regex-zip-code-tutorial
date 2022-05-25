@@ -1,4 +1,4 @@
-# Tutorial on Regular Expressions—Zip Code Example
+# Tutorial on Regular Expressions&mdash;Validating Zip Codes
 
 This repository contains all development for a tutorial that will be
 published on Medium.com under JavaScript in Plain English.
